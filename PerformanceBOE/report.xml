@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.51.0" label="Performance Retour à l&apos;emploi BOE" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" summaryElement="ve90" createdLocale="en_US" createdVersion="4.51.0" dateCreated="2025-06-12T08:57:18Z" dateModified="2025-06-12T09:00:31Z" createdApplication="SAS Visual Analytics 2020" lastModifiedApplication="SAS Visual Analytics 2020" nextUniqueNameIndex="280">
+<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.51.0" label="PerformanceBOE " features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" summaryElement="ve90" createdLocale="en_US" createdVersion="4.51.0" dateCreated="2025-06-12T08:57:18Z" dateModified="2025-06-13T16:04:58Z" createdApplication="SAS Visual Analytics 2020" lastModifiedApplication="SAS Visual Analytics 2020" nextUniqueNameIndex="389">
 	<Results>
-		<Result ref="dd222" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-06-10T14:41:50.998Z">
+		<Result ref="dd222" type="relational" status="success" dataLevel="baseline" label="Résultats" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="fr_FR" tableDateModified="2025-06-10T14:41:50.998Z">
 			<Variables>
 				<NumericVariable format="COMMA12." usage="quantitative" definedAggregation="totalCount" label="Frequency" ref="bi223" varname="bi223" column="c0"/>
 			</Variables>
@@ -11,7 +11,7 @@
 			<Data isIndexed="false" availableRowCount="1" contentKey="RY52WI2PWGG2OEE4IQDVTUDRMKN2XA66" size="6" format="CSV" rowCount="1" grandTotal="false" dataLayout="minimal"><![CDATA[839.0
 ]]></Data>
 		</Result>
-		<Result ref="dd143" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-06-10T14:41:50.998Z">
+		<Result ref="dd143" type="relational" status="success" dataLevel="baseline" label="Résultats" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="fr_FR" tableDateModified="2025-06-10T14:41:50.998Z">
 			<Variables>
 				<NumericVariable format="COMMA15." usage="quantitative" definedAggregation="sum" label="ACO1_2024" ref="bi144" varname="bi144" column="c0"/>
 				<NumericVariable format="COMMA15." usage="quantitative" definedAggregation="sum" label="ACO1_2022" ref="bi145" varname="bi145" column="c1"/>
@@ -26,7 +26,7 @@
 			<Data isIndexed="false" availableRowCount="1" contentKey="GJOZDWMN6TMJ3A4YPCUZZSLQK3NJBKOG" size="20" format="CSV" rowCount="1" grandTotal="false" dataLayout="minimal"><![CDATA[4047347.0,4321154.0
 ]]></Data>
 		</Result>
-		<Result ref="dd102" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-06-10T14:41:50.998Z">
+		<Result ref="dd102" type="relational" status="success" dataLevel="baseline" label="Résultats" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="fr_FR" tableDateModified="2025-06-10T14:41:50.998Z">
 			<Variables>
 				<NumericVariable format="COMMA12." usage="quantitative" definedAggregation="totalCount" label="Frequency" ref="bi103" varname="bi103" column="c0"/>
 			</Variables>
@@ -39,7 +39,7 @@
 			<Data isIndexed="false" availableRowCount="1" contentKey="RY52WI2PWGG2OEE4IQDVTUDRMKN2XA66" size="6" format="CSV" rowCount="1" grandTotal="false" dataLayout="minimal"><![CDATA[839.0
 ]]></Data>
 		</Result>
-		<Result ref="dd169" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-06-10T14:41:50.998Z">
+		<Result ref="dd169" type="relational" status="success" dataLevel="baseline" label="Résultats" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="fr_FR" tableDateModified="2025-06-10T14:41:50.998Z">
 			<Variables>
 				<NumericVariable format="COMMA15." usage="categorical" label="Conseillé Spécialisé (0/1)" ref="bi168" varname="bi168" column="c0"/>
 				<NumericVariable format="COMMA12." usage="quantitative" definedAggregation="totalCount" label="Frequency" ref="bi170" varname="bi170" column="c1"/>
@@ -56,36 +56,36 @@
 0.0,169.0
 ]]></Data>
 		</Result>
-		<Result ref="dd109" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-06-10T14:41:50.998Z">
+		<Result ref="dd109" type="relational" status="success" dataLevel="interactive" label="Résultats" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="fr_FR" tableDateModified="2025-06-10T14:41:50.998Z">
 			<Variables>
-				<NumericVariable format="COMMA15." usage="categorical" label="Conseillé Spécialisé (0/1)" ref="bi267" varname="bi267" column="c0"/>
-				<NumericVariable format="PERCENT12.1" usage="quantitative" definedAggregation="average" label="Atteinte obj ACO1H DR" ref="bi110" varname="bi110" column="c1"/>
-				<NumericVariable format="COMMA12." usage="quantitative" definedAggregation="sum" label="ACO1H" ref="bi111" varname="bi111" column="c3"/>
-				<NumericVariable format="COMMA15." usage="quantitative" definedAggregation="sum" label="ACO1H_2022" ref="bi112" varname="bi112" column="c4"/>
+				<NumericVariable format="COMMA15." usage="categorical" label="Conseillé Spécialisé (0/1)" ref="bi380" varname="bi380" column="c0"/>
+				<NumericVariable format="COMMA12." usage="quantitative" definedAggregation="sum" label="ACO1H" ref="bi111" varname="bi111" column="c1"/>
+				<NumericVariable format="COMMA15." usage="quantitative" definedAggregation="sum" label="ACO1H_2022" ref="bi112" varname="bi112" column="c2"/>
+				<NumericVariable format="PERCENT12.1" usage="quantitative" definedAggregation="average" label="R_ ACO1H 2024" ref="bi298" varname="bi298" column="c3"/>
 			</Variables>
 			<Columns>
 				<NumericColumn dataType="double" colname="c0" encoding="text"/>
 				<NumericAggregations colname="c1" encoding="text">
 					<DataColumn dataType="double" aggregation="sum"/>
-					<DataColumn dataType="double" aggregation="count"/>
+				</NumericAggregations>
+				<NumericAggregations colname="c2" encoding="text">
+					<DataColumn dataType="double" aggregation="sum"/>
 				</NumericAggregations>
 				<NumericAggregations colname="c3" encoding="text">
 					<DataColumn dataType="double" aggregation="sum"/>
-				</NumericAggregations>
-				<NumericAggregations colname="c4" encoding="text">
-					<DataColumn dataType="double" aggregation="sum"/>
+					<DataColumn dataType="double" aggregation="count"/>
 				</NumericAggregations>
 			</Columns>
 			<DefinedColumnSortItems>
-				<DefinedMeasureSortItem variable="bi110" sortDirection="descending"/>
+				<DefinedMeasureSortItem variable="bi298" sortDirection="descending"/>
 			</DefinedColumnSortItems>
-			<Data isIndexed="false" availableRowCount="2" contentKey="VCZTLM67YQ3BN6DXOZO5IXTQEDCHMIA2" size="91" format="CSV" rowCount="2" grandTotal="false" dataLayout="partiallyAggregated"><![CDATA[1.0,688.7894882438771,670.0,177066.0,189969.0
-0.0,171.12845276542998,169.0,26531.0,28610.0
+			<Data isIndexed="false" availableRowCount="2" contentKey="VWRNGXQEHXKCUYJEK4YKDPGBW75SVAET" size="90" format="CSV" rowCount="2" grandTotal="false" dataLayout="partiallyAggregated"><![CDATA[1.0,177066.0,189969.0,35.89386305035275,670.0
+0.0,26531.0,28610.0,7.756634780554421,169.0
 ]]></Data>
 		</Result>
-		<Result ref="dd118" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-06-10T14:41:50.998Z">
+		<Result ref="dd118" type="relational" status="success" dataLevel="interactive" label="Résultats" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="fr_FR" tableDateModified="2025-06-10T14:41:50.998Z">
 			<Variables>
-				<NumericVariable format="COMMA15." usage="categorical" label="Conseillé Spécialisé (0/1)" ref="bi268" varname="bi268" column="c0"/>
+				<NumericVariable format="COMMA15." usage="categorical" label="Conseillé Spécialisé (0/1)" ref="bi381" varname="bi381" column="c0"/>
 				<NumericVariable format="PERCENT12.1" usage="quantitative" definedAggregation="average" label="Atteinte obj ACO1H DR" ref="bi119" varname="bi119" column="c1"/>
 				<NumericVariable format="COMMA12." usage="quantitative" definedAggregation="sum" label="ACO1H" ref="bi120" varname="bi120" column="c3"/>
 				<NumericVariable format="COMMA15." usage="quantitative" definedAggregation="sum" label="ACO1H_2022" ref="bi121" varname="bi121" column="c4"/>
@@ -107,9 +107,9 @@
 1.0,688.7894882438771,670.0,177066.0,189969.0
 ]]></Data>
 		</Result>
-		<Result ref="dd134" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="false" sortLocale="en_US" tableDateModified="2025-06-10T14:41:50.998Z">
+		<Result ref="dd134" type="relational" status="success" dataLevel="interactive" label="Résultats" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="false" sortLocale="fr_FR" tableDateModified="2025-06-10T14:41:50.998Z">
 			<Variables>
-				<NumericVariable format="COMMA15." usage="rollup" label="Conseillé Spécialisé (0/1)" ref="bi269" varname="ru0" column="c0"/>
+				<NumericVariable format="COMMA15." usage="rollup" label="Conseillé Spécialisé (0/1)" ref="bi382" varname="ru0" column="c0"/>
 				<NumericVariable format="PERCENT12.1" usage="quantitative" definedAggregation="median" label="R_ DE longue durée (&gt; 18 mois) (med)" ref="bi135" varname="bi135" column="c1"/>
 			</Variables>
 			<Columns>
@@ -124,9 +124,9 @@
 0.0,0.45536609829488395
 ]]></Data>
 		</Result>
-		<Result ref="dd151" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-06-10T14:41:50.998Z">
+		<Result ref="dd151" type="relational" status="success" dataLevel="interactive" label="Résultats" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="fr_FR" tableDateModified="2025-06-10T14:41:50.998Z">
 			<Variables>
-				<NumericVariable format="COMMA15." usage="categorical" label="Conseillé Spécialisé (0/1)" ref="bi270" varname="bi270" column="c0"/>
+				<NumericVariable format="COMMA15." usage="categorical" label="Conseillé Spécialisé (0/1)" ref="bi383" varname="bi383" column="c0"/>
 				<NumericVariable format="PERCENT12.1" usage="quantitative" definedAggregation="average" label="Atteinte obj ACO2H DR" ref="bi152" varname="bi152" column="c1"/>
 				<NumericVariable format="COMMA12.2" usage="quantitative" definedAggregation="average" label="ACO2H" ref="bi153" varname="bi153" column="c3"/>
 			</Variables>
@@ -148,9 +148,9 @@
 0.0,169.8561940747189,169.0,5547.2804,169.0
 ]]></Data>
 		</Result>
-		<Result ref="dd159" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="false" sortLocale="en_US" tableDateModified="2025-06-10T14:41:50.998Z">
+		<Result ref="dd159" type="relational" status="success" dataLevel="interactive" label="Résultats" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="false" sortLocale="fr_FR" tableDateModified="2025-06-10T14:41:50.998Z">
 			<Variables>
-				<NumericVariable format="COMMA15." usage="rollup" label="Conseillé Spécialisé (0/1)" ref="bi271" varname="ru0" column="c0"/>
+				<NumericVariable format="COMMA15." usage="rollup" label="Conseillé Spécialisé (0/1)" ref="bi384" varname="ru0" column="c0"/>
 				<NumericVariable format="PERCENT12.1" usage="quantitative" definedAggregation="median" label="R_ DE très longue durée (&gt; 24 mois) (med)" ref="bi160" varname="bi160" column="c1"/>
 			</Variables>
 			<Columns>
@@ -165,9 +165,9 @@
 0.0,0.26894865525672373
 ]]></Data>
 		</Result>
-		<Result ref="dd193" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="false" sortLocale="en_US" tableDateModified="2025-06-10T14:41:50.998Z">
+		<Result ref="dd193" type="relational" status="success" dataLevel="interactive" label="Résultats" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="false" sortLocale="fr_FR" tableDateModified="2025-06-10T14:41:50.998Z">
 			<Variables>
-				<NumericVariable format="COMMA15." usage="rollup" label="Conseillé Spécialisé (0/1)" ref="bi274" varname="ru0" column="c0"/>
+				<NumericVariable format="COMMA15." usage="rollup" label="Conseillé Spécialisé (0/1)" ref="bi387" varname="ru0" column="c0"/>
 				<StringVariable label="Direction Générale" ref="bi192" varname="bi192" column="c1"/>
 				<NumericVariable format="COMMA15." usage="quantitative" definedAggregation="median" label="Portefeuille EXH (med)" ref="bi194" varname="bi194" column="c2"/>
 				<NumericVariable format="COMMA15." usage="quantitative" definedAggregation="median" label="Portefeuille GLO (med)" ref="bi195" varname="bi195" column="c3"/>
@@ -194,9 +194,9 @@
 			<StringTable contentKey="TCEUPFUHSLSXWYORZQKM74GKSUGZP6BN" size="21" format="CSV" rowCount="1"><![CDATA["DIRECTION GENERALE"
 ]]></StringTable>
 		</Result>
-		<Result ref="dd176" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-06-10T14:41:50.998Z">
+		<Result ref="dd176" type="relational" status="success" dataLevel="interactive" label="Résultats" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="fr_FR" tableDateModified="2025-06-10T14:41:50.998Z">
 			<Variables>
-				<NumericVariable format="COMMA15." usage="categorical" label="Conseillé Spécialisé (0/1)" ref="bi272" varname="bi272" column="c0"/>
+				<NumericVariable format="COMMA15." usage="categorical" label="Conseillé Spécialisé (0/1)" ref="bi385" varname="bi385" column="c0"/>
 				<NumericVariable format="PERCENT12.1" usage="quantitative" definedAggregation="average" label="R_ Retour à l&apos;emploi Evol% 2022_2024 (Avg)" ref="bi177" varname="bi177" column="c1"/>
 			</Variables>
 			<Columns>
@@ -213,9 +213,9 @@
 0.0,15.353390865399842,169.0
 ]]></Data>
 		</Result>
-		<Result ref="dd183" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-06-10T14:41:50.998Z">
+		<Result ref="dd183" type="relational" status="success" dataLevel="interactive" label="Résultats" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="fr_FR" tableDateModified="2025-06-10T14:41:50.998Z">
 			<Variables>
-				<NumericVariable format="COMMA15." usage="categorical" label="Conseillé Spécialisé (0/1)" ref="bi273" varname="bi273" column="c0"/>
+				<NumericVariable format="COMMA15." usage="categorical" label="Conseillé Spécialisé (0/1)" ref="bi386" varname="bi386" column="c0"/>
 				<NumericVariable format="COMMA12.2" usage="quantitative" definedAggregation="average" label="R_ Ecoulement Evol% 2022_2024" ref="bi184" varname="bi184" column="c1"/>
 			</Variables>
 			<Columns>
@@ -232,10 +232,10 @@
 0.0,433.6142556841185,169.0
 ]]></Data>
 		</Result>
-		<Result ref="dd205" type="relational" status="success" dataLevel="interactive" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2025-06-10T14:41:50.998Z">
+		<Result ref="dd205" type="relational" status="success" dataLevel="interactive" label="Résultats" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="fr_FR" tableDateModified="2025-06-10T14:41:50.998Z">
 			<Variables>
 				<StringVariable label="Direction Générale" ref="bi204" varname="bi204" column="c0"/>
-				<NumericVariable format="COMMA15." usage="categorical" label="Conseillé Spécialisé (0/1)" ref="bi275" varname="bi275" column="c1"/>
+				<NumericVariable format="COMMA15." usage="categorical" label="Conseillé Spécialisé (0/1)" ref="bi388" varname="bi388" column="c1"/>
 				<NumericVariable format="PERCENT12.1" usage="quantitative" definedAggregation="average" label="DE(%) EXH" ref="bi206" varname="bi206" column="c2"/>
 				<NumericVariable format="PERCENT12.2" usage="quantitative" definedAggregation="average" label="DE(%) GLO" ref="bi207" varname="bi207" column="c4"/>
 				<NumericVariable format="PERCENT12.2" usage="quantitative" definedAggregation="average" label="DE(%) GUI" ref="bi208" varname="bi208" column="c6"/>
@@ -302,22 +302,22 @@
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd113">
 			<BusinessItems>
 				<RelationalDataItem name="bi112" base="bi66"/>
-				<RelationalDataItem name="bi110" base="bi68"/>
 				<RelationalDataItem name="bi111" base="bi69"/>
-				<RelationalDataItem name="bi267" base="bi26"/>
+				<RelationalDataItem name="bi298" base="bi74"/>
+				<RelationalDataItem name="bi380" base="bi26"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd114">
 				<MultidimensionalQuery detail="false">
 					<Axes>
 						<Axis type="column"/>
 						<Axis type="row">
-							<BusinessItem ref="bi110"/>
 							<BusinessItem ref="bi111"/>
 							<BusinessItem ref="bi112"/>
+							<BusinessItem ref="bi298"/>
 						</Axis>
 					</Axes>
 					<ColumnSortItems>
-						<MeasureSortItem ref="bi110" sortDirection="descending"/>
+						<MeasureSortItem ref="bi298" sortDirection="descending"/>
 					</ColumnSortItems>
 				</MultidimensionalQuery>
 				<ResultDefinitions>
@@ -330,7 +330,7 @@
 				<RelationalDataItem name="bi119" base="bi68"/>
 				<RelationalDataItem name="bi120" base="bi69"/>
 				<RelationalDataItem name="bi121" base="bi66"/>
-				<RelationalDataItem name="bi268" base="bi26"/>
+				<RelationalDataItem name="bi381" base="bi26"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd123">
 				<MultidimensionalQuery detail="false">
@@ -351,7 +351,7 @@
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd136">
 			<BusinessItems>
 				<RelationalDataItem name="bi135" base="bi83"/>
-				<RelationalDataItem name="bi269" base="bi26"/>
+				<RelationalDataItem name="bi382" base="bi26"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd137">
 				<MultidimensionalQuery detail="false">
@@ -397,7 +397,7 @@
 			<BusinessItems>
 				<RelationalDataItem name="bi152" base="bi70"/>
 				<RelationalDataItem name="bi153" base="bi63"/>
-				<RelationalDataItem name="bi270" base="bi26"/>
+				<RelationalDataItem name="bi383" base="bi26"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd155">
 				<MultidimensionalQuery detail="false">
@@ -420,7 +420,7 @@
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd161">
 			<BusinessItems>
 				<RelationalDataItem name="bi160" base="bi84"/>
-				<RelationalDataItem name="bi271" base="bi26"/>
+				<RelationalDataItem name="bi384" base="bi26"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd162">
 				<MultidimensionalQuery detail="false">
@@ -467,7 +467,7 @@
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd178">
 			<BusinessItems>
 				<RelationalDataItem name="bi177" base="bi81"/>
-				<RelationalDataItem name="bi272" base="bi26"/>
+				<RelationalDataItem name="bi385" base="bi26"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd179">
 				<MultidimensionalQuery detail="false">
@@ -489,7 +489,7 @@
 		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd185">
 			<BusinessItems>
 				<RelationalDataItem name="bi184" base="bi37"/>
-				<RelationalDataItem name="bi273" base="bi26"/>
+				<RelationalDataItem name="bi386" base="bi26"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd186">
 				<MultidimensionalQuery detail="false">
@@ -516,7 +516,7 @@
 				<RelationalDataItem name="bi197" base="bi55"/>
 				<RelationalDataItem name="bi198" base="bi56"/>
 				<RelationalDataItem name="bi192" base="bi9"/>
-				<RelationalDataItem name="bi274" base="bi26"/>
+				<RelationalDataItem name="bi387" base="bi26"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd200">
 				<MultidimensionalQuery detail="false">
@@ -549,7 +549,7 @@
 				<RelationalDataItem name="bi208" base="bi29"/>
 				<RelationalDataItem name="bi209" base="bi30"/>
 				<RelationalDataItem name="bi210" base="bi31"/>
-				<RelationalDataItem name="bi275" base="bi26"/>
+				<RelationalDataItem name="bi388" base="bi26"/>
 			</BusinessItems>
 			<DataDefinition dataSource="ds7" type="multidimensional" name="dd212">
 				<MultidimensionalQuery detail="false">
@@ -771,9 +771,6 @@ ELSE (Région)
 				<Property key="isAutoLabel">true</Property>
 			</EditorProperties>
 		</VisualContainer>
-		<Text name="ve100" label="Text 1 (1) (1)" selectionDisabled="true" applyDynamicBrushes="no">
-			<P class="paragraph1"><Span action="ac99" class="span1">Lien vers Définitions</Span><Span> </Span></P>
-		</Text>
 		<VisualContainer containerType="layout" name="ve218" label="Layout Container 15" selectionDisabled="true">
 			<EditorProperties>
 				<Property key="visualType">LAYOUT_CONTAINER</Property>
@@ -824,7 +821,7 @@ ELSE (Région)
 				<Column variable="bi103"/>
 			</Columns>
 		</Table>
-		<Graph graphType="keyValue" supplementalVisuals="ve115" resultDefinitions="dd109" name="ve116" data="dd113" label="Key value - Atteinte obj ACO1H DR 1" applyDynamicBrushes="yes">
+		<Graph graphType="keyValue" supplementalVisuals="ve115" resultDefinitions="dd109" name="ve116" data="dd113" label="Key value - R_ ACO1H 2024 1" applyDynamicBrushes="yes">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="previousShowMeasureValue">true</Property>
@@ -832,24 +829,24 @@ ELSE (Région)
 				<Property key="previousShowCategoryValue">true</Property>
 				<Property key="previousShowCategoryLabel">true</Property>
 				<Property key="previousShowAggregation">false</Property>
-				<Property key="addedInteractionQueryDataItems">bi267</Property>
+				<Property key="addedInteractionQueryDataItems">bi380</Property>
 			</EditorProperties>
-			<Title auto="false"><P class="styleForTitle_paragraph1"><Span class="styleForTitle_span1">Atteinte obj ACO1 H (DR)</Span></P></Title>
+			<Title auto="false"><P class="styleForTitle_paragraph1"><Span class="styleForTitle_span1">R_ACO1 H</Span></P></Title>
 <![CDATA[<StatGraph border="false" opaque="false" missingValueDisplay="autolabel">
     <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
     <Meta>
         <DynVars>
             <DynVar name="RESPONSE" description="MEASURE_VAR" required="true" assignedType="numeric" type="numeric">
                 <DefaultValues>
-                    <Value>dd109.bi110</Value>
+                    <Value>dd109.bi298</Value>
                 </DefaultValues>
             </DynVar>
             <DynVar name="CATEGORY" description="CATEGORY_VAR" required="false" type="character"/>
             <DynVar name="TIP" description="TIP_VAR" required="false" assignedType="numeric" type="any" multiplesAllowed="true">
                 <DefaultValues>
-                    <Value>dd109.bi110</Value>
                     <Value>dd109.bi111</Value>
                     <Value>dd109.bi112</Value>
+                    <Value>dd109.bi298</Value>
                 </DefaultValues>
             </DynVar>
             <DynVar name="HIDDEN" description="HIDDEN_VAR" required="false" type="character" multiplesAllowed="true"/>
@@ -866,7 +863,7 @@ ELSE (Région)
 		</Graph>
 		<Table columnSizing="autoFill" resultDefinitions="dd109" name="ve115" data="dd113" applyDynamicBrushes="yes">
 			<Columns>
-				<Column variable="bi110"/>
+				<Column variable="bi298"/>
 				<Column variable="bi111"/>
 				<Column variable="bi112"/>
 			</Columns>
@@ -875,7 +872,7 @@ ELSE (Région)
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="customRangeInterval">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi268</Property>
+				<Property key="addedInteractionQueryDataItems">bi381</Property>
 			</EditorProperties>
 			<Title auto="false"><P><Span class="styleForTitle_span1">Atteinte obj ACO1H (DR)</Span></P></Title>
 			<Conditions>
@@ -930,7 +927,7 @@ ELSE (Région)
 				<Property key="previousShowCategoryValue">true</Property>
 				<Property key="previousShowCategoryLabel">true</Property>
 				<Property key="previousShowAggregation">false</Property>
-				<Property key="addedInteractionQueryDataItems">bi269</Property>
+				<Property key="addedInteractionQueryDataItems">bi382</Property>
 			</EditorProperties>
 <![CDATA[<StatGraph border="false" opaque="false" missingValueDisplay="autolabel">
     <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
@@ -1022,7 +1019,7 @@ ELSE (Région)
 				<Property key="previousShowCategoryValue">true</Property>
 				<Property key="previousShowCategoryLabel">true</Property>
 				<Property key="previousShowAggregation">false</Property>
-				<Property key="addedInteractionQueryDataItems">bi270</Property>
+				<Property key="addedInteractionQueryDataItems">bi383</Property>
 			</EditorProperties>
 			<Title auto="false"><P class="styleForTitle_paragraph1"><Span class="styleForTitle_span1">Atteinte obj ACO2 H (DR)</Span></P></Title>
 <![CDATA[<StatGraph border="false" opaque="false" missingValueDisplay="autolabel">
@@ -1069,7 +1066,7 @@ ELSE (Région)
 				<Property key="previousShowCategoryLabel">true</Property>
 				<Property key="previousShowAggregation">false</Property>
 				<Property key="KEY_VALUE_LAST_MEASURE_SORT_DIRECTION">descending</Property>
-				<Property key="addedInteractionQueryDataItems">bi271</Property>
+				<Property key="addedInteractionQueryDataItems">bi384</Property>
 			</EditorProperties>
 <![CDATA[<StatGraph border="false" opaque="false" missingValueDisplay="autolabel">
     <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
@@ -1172,7 +1169,7 @@ ELSE (Région)
 				<Property key="previousShowCategoryLabel">true</Property>
 				<Property key="previousShowAggregation">false</Property>
 				<Property key="KEY_VALUE_LAST_MEASURE_SORT_DIRECTION">descending</Property>
-				<Property key="addedInteractionQueryDataItems">bi272</Property>
+				<Property key="addedInteractionQueryDataItems">bi385</Property>
 			</EditorProperties>
 			<Title auto="false"><P><Span class="styleForTitle_span1">R_Retour à l&apos;emploi (Evol. 2022-2024)</Span></P></Title>
 <![CDATA[<StatGraph border="false" opaque="false" missingValueDisplay="autolabel">
@@ -1216,7 +1213,7 @@ ELSE (Région)
 				<Property key="previousShowCategoryLabel">true</Property>
 				<Property key="previousShowAggregation">false</Property>
 				<Property key="KEY_VALUE_LAST_MEASURE_SORT_DIRECTION">descending</Property>
-				<Property key="addedInteractionQueryDataItems">bi273</Property>
+				<Property key="addedInteractionQueryDataItems">bi386</Property>
 			</EditorProperties>
 <![CDATA[<StatGraph border="false" opaque="false" missingValueDisplay="autolabel">
     <PadAttrs top="0px" bottom="0px" left="0px" right="0px"/>
@@ -1258,7 +1255,7 @@ ELSE (Région)
 		<Graph graphType="bar" supplementalVisuals="ve201" resultDefinitions="dd193" name="ve202" data="dd199" label="Bar - Direction Générale 1" applyDynamicBrushes="yes" sourceInteractionVariables="bi192">
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
-				<Property key="addedInteractionQueryDataItems">bi274</Property>
+				<Property key="addedInteractionQueryDataItems">bi387</Property>
 			</EditorProperties>
 			<Title auto="false"><P><Span class="styleForTitle_span1">Portefeuilles (med)</Span></P></Title>
 <![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel" displayOptionPolicy="union">
@@ -1343,7 +1340,7 @@ ELSE (Région)
 			<EditorProperties>
 				<Property key="isAutoLabel">true</Property>
 				<Property key="measureAxisLayout">sharedAxis</Property>
-				<Property key="addedInteractionQueryDataItems">bi275</Property>
+				<Property key="addedInteractionQueryDataItems">bi388</Property>
 			</EditorProperties>
 			<Title auto="false"><P><Span class="styleForTitle_span1">DE (%)  (avg)</Span></P></Title>
 <![CDATA[<StatGraph border="false" opaque="false" includeMissingDiscrete="true" selectionMode="multiple" missingValueDisplay="autolabel" displayOptionPolicy="union">
@@ -1434,7 +1431,7 @@ ELSE (Région)
 	<PromptDefinitions>
 		<PromptDefinition label="Agence Parameter" isParameter="true" dataType="string" multiValued="false" name="pr8"/>
 	</PromptDefinitions>
-	<View representativeVisual="vi86">
+	<View representativeVisual="vi131">
 		<Header>
 			<MediaContainer target="mt2">
 				<ResponsiveLayout orientation="horizontal" overflow="fit">
@@ -1537,7 +1534,7 @@ ELSE (Région)
 								<Width mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="shrinkable"/>
 							</WidthConstraint>
 							<HeightConstraint>
-								<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="shrinkable"/>
+								<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="79.43%" flexibility="shrinkable"/>
 							</HeightConstraint>
 						</ResponsiveConstraint>
 						<ResponsiveLayout orientation="vertical" overflow="fit">
@@ -1551,16 +1548,6 @@ ELSE (Région)
 								<Weight value="100%"/>
 							</Weights>
 						</ResponsiveLayout>
-						<Visual ref="ve100" name="vi101">
-							<ResponsiveConstraint>
-								<WidthConstraint>
-									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="59.5%" flexibility="flexible"/>
-								</WidthConstraint>
-								<HeightConstraint>
-									<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="fixed"/>
-								</HeightConstraint>
-							</ResponsiveConstraint>
-						</Visual>
 						<Container ref="ve218" name="vi219">
 							<ResponsiveConstraint>
 								<WidthConstraint>
@@ -1597,7 +1584,7 @@ ELSE (Région)
 											<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="25%" flexibility="flexible"/>
 										</WidthConstraint>
 										<HeightConstraint>
-											<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="29%" flexibility="fixed"/>
+											<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="20.75%" flexibility="fixed"/>
 										</HeightConstraint>
 									</ResponsiveConstraint>
 								</Visual>
@@ -1607,7 +1594,7 @@ ELSE (Région)
 											<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="25%" flexibility="flexible"/>
 										</WidthConstraint>
 										<HeightConstraint>
-											<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="10%" flexibility="fixed"/>
+											<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="8.98%" flexibility="fixed"/>
 										</HeightConstraint>
 									</ResponsiveConstraint>
 								</Visual>
@@ -1617,7 +1604,7 @@ ELSE (Région)
 											<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
 										</WidthConstraint>
 										<HeightConstraint>
-											<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="15%" flexibility="fixed"/>
+											<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="17.41%" flexibility="fixed"/>
 										</HeightConstraint>
 									</ResponsiveConstraint>
 								</Visual>
@@ -1627,7 +1614,7 @@ ELSE (Région)
 											<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="25%" flexibility="flexible"/>
 										</WidthConstraint>
 										<HeightConstraint>
-											<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="25.77%" flexibility="fixed"/>
+											<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="16.74%" flexibility="fixed"/>
 										</HeightConstraint>
 									</ResponsiveConstraint>
 								</Visual>
@@ -1760,7 +1747,7 @@ ELSE (Région)
 											<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="33.88%" flexibility="fixed"/>
 										</WidthConstraint>
 										<HeightConstraint>
-											<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+											<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="44.92%" flexibility="shrinkable"/>
 										</HeightConstraint>
 									</ResponsiveConstraint>
 								</Visual>
@@ -1770,7 +1757,7 @@ ELSE (Région)
 											<Width mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
 										</WidthConstraint>
 										<HeightConstraint>
-											<Height mediaTarget="mt3" preferredSizeBehavior="ignore" flexibility="flexible"/>
+											<Height mediaTarget="mt3" preferredSizeBehavior="ignore" value="33.85%" flexibility="shrinkable"/>
 										</HeightConstraint>
 									</ResponsiveConstraint>
 								</Visual>
@@ -1794,39 +1781,39 @@ ELSE (Région)
 	<Interactions>
 		<Interaction name="ia229" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve174" variable="bi168"/>
-			<InteractionElementReference purpose="target" ref="ve116" variable="bi267"/>
+			<InteractionElementReference purpose="target" ref="ve116" variable="bi380"/>
 		</Interaction>
 		<Interaction name="ia230" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve174" variable="bi168"/>
-			<InteractionElementReference purpose="target" ref="ve130" variable="bi268"/>
+			<InteractionElementReference purpose="target" ref="ve130" variable="bi381"/>
 		</Interaction>
 		<Interaction name="ia231" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve174" variable="bi168"/>
-			<InteractionElementReference purpose="target" ref="ve139" variable="bi269"/>
+			<InteractionElementReference purpose="target" ref="ve139" variable="bi382"/>
 		</Interaction>
 		<Interaction name="ia232" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve174" variable="bi168"/>
-			<InteractionElementReference purpose="target" ref="ve157" variable="bi270"/>
+			<InteractionElementReference purpose="target" ref="ve157" variable="bi383"/>
 		</Interaction>
 		<Interaction name="ia233" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve174" variable="bi168"/>
-			<InteractionElementReference purpose="target" ref="ve164" variable="bi271"/>
+			<InteractionElementReference purpose="target" ref="ve164" variable="bi384"/>
 		</Interaction>
 		<Interaction name="ia234" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve174" variable="bi168"/>
-			<InteractionElementReference purpose="target" ref="ve202" variable="bi274"/>
+			<InteractionElementReference purpose="target" ref="ve202" variable="bi387"/>
 		</Interaction>
 		<Interaction name="ia235" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve174" variable="bi168"/>
-			<InteractionElementReference purpose="target" ref="ve181" variable="bi272"/>
+			<InteractionElementReference purpose="target" ref="ve181" variable="bi385"/>
 		</Interaction>
 		<Interaction name="ia236" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve174" variable="bi168"/>
-			<InteractionElementReference purpose="target" ref="ve188" variable="bi273"/>
+			<InteractionElementReference purpose="target" ref="ve188" variable="bi386"/>
 		</Interaction>
 		<Interaction name="ia237" type="filter" derived="false">
 			<InteractionElementReference purpose="source" ref="ve174" variable="bi168"/>
-			<InteractionElementReference purpose="target" ref="ve214" variable="bi275"/>
+			<InteractionElementReference purpose="target" ref="ve214" variable="bi388"/>
 		</Interaction>
 	</Interactions>
 	<Conditions>
@@ -1946,7 +1933,7 @@ ELSE (Région)
 	</Versions>
 	<Editors>
 		<Editor applicationName="VA">
-			<Revision editorVersion="2025.04" lastDate="2025-06-12T09:00:31.098Z"/>
+			<Revision editorVersion="2025.04" lastDate="2025-06-13T16:04:58.310Z"/>
 		</Editor>
 	</Editors>
 </History>

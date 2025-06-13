@@ -22,10 +22,6 @@
 #ve157 .styleForTitle_paragraph1 {
   text-align: center;
 }
-#ve100 .span1 {
-  color: #2C8AD6;
-  font-style: italic;
-}
 #ve214 .styleForTitle_span1 {
   font-weight: bold;
   font-size: 10pt;
@@ -38,15 +34,13 @@
 }
 #ve116 .styleForTitle_span1 {
   font-weight: bold;
+  font-size: 12pt;
 }
 #ve90 .paragraph1 {
   text-align: center;
 }
 #ve116 .styleForTitle_paragraph1 {
   text-align: center;
-}
-#ve100 .paragraph1 {
-  text-align: right;
 }
 #ve157 .styleForTitle_span1 {
   font-weight: bold;
