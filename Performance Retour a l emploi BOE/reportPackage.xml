@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<reportPackage>
+    <dataLevel>offline</dataLevel>
+    <files>
+        <file contentKey="BYUOK3UHJEW267KQWYNJ7KWXYMKLLN2L" name="report" type="report">
+            <links>
+                <link href="/report.xml" method="GET" rel="content" type="application/vnd.sas.report.content" uri="/report.xml"/>
+            </links>
+        </file>
+        <file contentKey="CKSSVXTY2MO2SI4LJ7B4Q3RHWG4ZVPS4" name="basems1.css" type="css">
+            <links>
+                <link href="/css/basems1.css" method="GET" rel="content" type="text/css" uri="/css/basems1.css"/>
+            </links>
+        </file>
+        <file contentKey="WF4O55PDGO3NWQLVQILVLVUCGGOCYK6Z" name="highcontrast.css" type="css">
+            <links>
+                <link href="/css/highcontrast.css" method="GET" rel="content" type="text/css" uri="/css/highcontrast.css"/>
+            </links>
+        </file>
+        <file contentKey="L2ATYBNIIDFYSX42CO3GXVTQ5CLURAD4" name="ms1.css" type="css">
+            <links>
+                <link href="/css/ms1.css" method="GET" rel="content" type="text/css" uri="/css/ms1.css"/>
+            </links>
+        </file>
+        <file contentKey="2DSXHZSDEREDFCZ2K4SVDDIE5P4MBUV3" name="ve85.png" source="/files/files/97830294-fcee-4069-aa84-5560bff7bf28" type="image">
+            <links>
+                <link href="/image/ve85.png" method="GET" rel="content" type="image/png" uri="/image/ve85.png"/>
+            </links>
+        </file>
+        <file contentKey="T2ZVRGR4JART4RM2YGTDCLBODUDU2RJL" name="metadataSupplement" type="resource">
+            <links>
+                <link href="/metadataSupplement.xml" method="GET" rel="content" type="application/vnd.sas.report.metadata.supplement" uri="/metadataSupplement.xml"/>
+            </links>
+        </file>
+        <file contentKey="CRXYG3S56AXBSDEWSLMSPFHRY2AIMNJE" name="index.html" type="html">
+            <links>
+                <link href="/index.html" method="GET" rel="content" type="text/html" uri="/index.html"/>
+            </links>
+        </file>
+        <file contentKey="FAZMESXTOOGP5I7RGU2HDZGV2SBESF3C" name="packageIndex.html" type="html">
+            <links>
+                <link href="/packageIndex.html" method="GET" rel="content" type="text/html" uri="/packageIndex.html"/>
+            </links>
+        </file>
+        <file contentKey="WATNEWFH2HGRRBQSZVDZ73HHZO3BIJTL" name="viyafonts.css" type="css">
+            <links>
+                <link href="/css/viyafonts.css" method="GET" rel="content" type="text/css" uri="/css/viyafonts.css"/>
+            </links>
+        </file>
+        <file contentKey="XFOONS645BF4XEIR2JLONG6FCJOF4MNB" name="settings" type="resource">
+            <links>
+                <link href="/settings.json" method="GET" rel="content" type="application/vnd.sas.attributes" uri="/settings.json"/>
+            </links>
+        </file>
+    </files>
+    <formatLocale>fr</formatLocale>
+    <generatedTimeStamp>2025-06-13T15:51:29.653Z</generatedTimeStamp>
+    <id>o_6504130d-7392-4860-a3a7-5914e31d16ac</id>
+    <links>
+        <link href="/reportPackages/packages/o_6504130d-7392-4860-a3a7-5914e31d16ac" method="GET" rel="self" type="application/vnd.sas.report.package" uri="/reportPackages/packages/o_6504130d-7392-4860-a3a7-5914e31d16ac"/>
+        <link href="/reportData/results?reportContentKey=BBGEBYINVW4O5YSQYRQXY3OKJHDYPB6W&amp;reportUri=%2Freports%2Freports%2F75b0fee9-90d7-45f4-a900-b87ed5edcab5&amp;reportDate=2025-06-13T15%3A51%3A29.653Z" method="POST" rel="requery" responseType="application/vnd.sas.report.results" type="application/vnd.sas.report.query.state" uri="/reportData/results?reportContentKey=BBGEBYINVW4O5YSQYRQXY3OKJHDYPB6W&amp;reportUri=%2Freports%2Freports%2F75b0fee9-90d7-45f4-a900-b87ed5edcab5&amp;reportDate=2025-06-13T15%3A51%3A29.653Z"/>
+        <link href="/reportData/jobs?reportContentKey=BBGEBYINVW4O5YSQYRQXY3OKJHDYPB6W&amp;reportUri=%2Freports%2Freports%2F75b0fee9-90d7-45f4-a900-b87ed5edcab5&amp;reportDate=2025-06-13T15%3A51%3A29.653Z" method="POST" rel="requeryJob" responseType="application/vnd.sas.report.data.job" type="application/vnd.sas.report.query.state" uri="/reportData/jobs?reportContentKey=BBGEBYINVW4O5YSQYRQXY3OKJHDYPB6W&amp;reportUri=%2Freports%2Freports%2F75b0fee9-90d7-45f4-a900-b87ed5edcab5&amp;reportDate=2025-06-13T15%3A51%3A29.653Z"/>
+    </links>
+    <locale>fr</locale>
+    <modifiedTimeStamp>2025-06-13T07:35:22.350Z</modifiedTimeStamp>
+    <size>262853</size>
+    <source>/reports/reports/75b0fee9-90d7-45f4-a900-b87ed5edcab5</source>
+    <version>56</version>
+</reportPackage>
