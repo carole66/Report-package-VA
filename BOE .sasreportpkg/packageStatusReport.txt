@@ -1,0 +1,42 @@
+Crosstab - Agence 1
+  Interactivity for this object is limited for the following reasons:
+    * Linked selection actions are not supported.
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses a measure with an aggregation other than sum, min, max, average, count, frequency, or frequency percent.
+
+Bubble - DE(%) GLO 1
+  Interactivity for this object is limited for the following reasons:
+    * Linked selection actions are not supported.
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses a data item, filter, or rank that references a parameter.
+    * This object uses a measure with an aggregation other than sum, min, max, average, count, frequency, or frequency percent.
+
+Bubble - R_ Ecoulement Evol% 2022_2024 1
+  Interactivity for this object is limited for the following reasons:
+    * Linked selection actions are not supported.
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses a data item, filter, or rank that references a parameter.
+    * This object uses a measure with an aggregation other than sum, min, max, average, count, frequency, or frequency percent.
+
+Bubble - EXH (%) 1
+  Interactivity for this object is limited for the following reasons:
+    * Linked selection actions are not supported.
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses a data item, filter, or rank that references a parameter.
+    * This object uses a measure with an aggregation other than sum, min, max, average, count, frequency, or frequency percent.
+
+List table - Agence 3
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses a data item, filter, or rank that references a parameter.
+    * This object uses a measure with an aggregation other than sum, min, max, average, count, frequency, or frequency percent.
