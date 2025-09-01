@@ -1,0 +1,13 @@
+Key value - R_ DE longue durée (> 18 mois) (med) 1
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 1179648 queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses a measure with an aggregation other than sum, min, max, average, count, frequency, or frequency percent.
+
+Key value - R_ DE très longue durée (> 24 mois) (med) 1
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 1179648 queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses a measure with an aggregation other than sum, min, max, average, count, frequency, or frequency percent.
