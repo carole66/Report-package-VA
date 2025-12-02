@@ -1,0 +1,11 @@
+Tableau croisé - ACTIVITY_YEAR 1
+  The data is not available. The data for this object could not be retrieved.
+    * Une erreur s’est produite.
+
+Ligne - ACTIVITY_YEAR 1
+  The data is not available. The data for this object could not be retrieved.
+    * Une erreur s’est produite.
+
+Barre - ACTIVITY_YEAR 1
+  The data is not available. The data for this object could not be retrieved.
+    * La colonne ACCOUNT_INDUSTRY_GROUPING référencée par la requête est introuvable.

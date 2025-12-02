@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataSupplement>
+    <tables>
+        <table dataLocale="en_US" dataSources="ds7" resourceIdentifier="'cas-shared-finance','DMA - Orion (DNFS)','ACTIVITY_REPORTING','en_US'" tableModifiedTimeStamp="2025-12-02T07:42:52.597Z">
+            <columns>
+                <column dataType="double" format="F8." label="DAYS IN STATUS" xref="DAYS_IN_STATUS"/>
+                <column dataType="double" format="F8." label="OPPORTUNITY_JOINED_TO_ID" xref="OPPORTUNITY_JOINED_TO_ID"/>
+                <column dataType="date" format="DATE9" label="DATE CLOSED" xref="DATECLOSED"/>
+                <column dataType="date" format="DATE9" label="OPPORTUNITY CREATED" xref="OPPORTUNITY_CREATED"/>
+                <column dataType="string" label="OWNEDBY_COUNTRY" xref="OWNEDBY_COUNTRY"/>
+                <column dataType="string" label="FLAG_EMPLOYEE_ACCOUNT_COUNTRY" xref="FLAG_EMPLOYEE_ACCOUNT_COUNTRY"/>
+                <column dataType="string" label="Assigned CA Flag" xref="ASSIGNED_CA_FLAG"/>
+                <column dataType="string" label="JOBTITLE" xref="JOBTITLE"/>
+                <column dataType="string" label="Gone" xref="GONE_FLAG"/>
+                <column dataType="string" label="Partner engagement model Label" xref="partner_engagement_model_label"/>
+                <column dataType="string" label="SSONAME" xref="opportunity_name"/>
+                <column dataType="string" label="Viya flag" xref="viya_flg"/>
+                <column dataType="string" label="Viya 4 flag" xref="viya4_flg"/>
+                <column dataType="string" label="IS_LINE_MANAGER" xref="IS_LINE_MANAGER"/>
+                <column dataType="string" label="SECURITY_EXTRA" xref="SECURITY_EXTRA"/>
+                <column dataType="string" label="CREATEDBY LEVELS" xref="CREATEDBY_LEVELS"/>
+                <column dataType="double" format="F8." label="ACCOUNTID_ORION" xref="ACCOUNTID_ORION"/>
+                <column dataType="double" format="F8." label="OPPORTUNITY_ID" xref="OPPORTUNITY_ID"/>
+                <column dataType="datetime" format="DATETIME0" label="ACTIVITY_DATE" xref="ACTIVITY_DATE"/>
+                <column dataType="string" label="DEPTNAME" xref="DEPTNAME"/>
+                <column dataType="string" label="MODERNIZATION" xref="MODERNIZATION"/>
+                <column dataType="string" label="CURRENT_QUADRANT_DESC" xref="CURRENT_QUADRANT_DESC"/>
+                <column dataType="string" label="STREAMS_CATEGORY" xref="STREAMS_CATEGORY"/>
+                <column dataType="string" label="REVENUE_STREAM" xref="REVENUE_STREAM"/>
+                <column dataType="string" label="SALETYPE" xref="SALETYPE"/>
+                <column dataType="string" label="Industry" xref="INDUSTRY"/>
+                <column dataType="string" label="Subindustry" xref="SUBINDUSTRY"/>
+                <column dataType="double" format="BEST12." label="ID_NUMBER" xref="ID_NUMBER"/>
+                <column dataType="string" label="CATEGORY" xref="CATEGORY"/>
+                <column dataType="double" format="BEST12." label="CATEGORY_LOV_ID" xref="CATEGORY_LOV_ID"/>
+                <column dataType="string" label="ACCOUNT" xref="ACCOUNT"/>
+                <column dataType="string" label="ACCOUNT_INDUSTRY" xref="ACCOUNT_INDUSTRY"/>
+                <column dataType="string" label="ACCOUNT_SALESGROUP" xref="ACCOUNT_SALESGROUP"/>
+                <column dataType="double" format="BEST12." label="PARENTACCOUNTID_ORION" xref="PARENTACCOUNTID_ORION"/>
+                <column dataType="string" label="PARENTACCOUNTNAME" xref="PARENTACCOUNTNAME"/>
+                <column dataType="string" label="OPPORTUNITY_CURRENCY" xref="OPPORTUNITY_CURRENCY"/>
+                <column dataType="double" format="BEST12." label="OPPORTUNITY_AMOUNT" xref="OPPORTUNITY_AMOUNT"/>
+                <column dataType="double" format="BEST12." label="OPPORTUNITY_USMAMOUNT" xref="OPPORTUNITY_USMAMOUNT"/>
+                <column dataType="string" label="OPPORTUNITY_MILESTONE" xref="OPPORTUNITY_MILESTONE"/>
+                <column dataType="datetime" format="DATETIME0" label="OPPORTUNITY_LBD" xref="OPPORTUNITY_LBD"/>
+                <column dataType="string" label="OPPORTUNITY_OWNER_NAME" xref="OPPORTUNITY_OWNER_NAME"/>
+                <column dataType="double" format="BEST12." label="OPPORTUNITY_OWNER_EMP_ID" xref="OPPORTUNITY_OWNER_EMP_ID"/>
+                <column dataType="string" label="OPPORTUNITY_MGR_NAME" xref="OPPORTUNITY_MGR_NAME"/>
+                <column dataType="string" label="OPPORTUNITY_MGR_EMPNO" xref="OPPORTUNITY_MGR_EMPNO"/>
+                <column dataType="double" format="BEST12." label="OPPORTUNITY_MGR_EMPID" xref="OPPORTUNITY_MGR_EMPID"/>
+                <column dataType="string" label="CUSTOMER_FACING" xref="CUSTOMER_FACING"/>
+                <column dataType="string" label="DEMONSTRATION_GIVEN" xref="DEMONSTRATION_GIVEN"/>
+                <column dataType="string" label="OPPORTUNITY_TYPE" xref="OPPORTUNITY_TYPE"/>
+                <column dataType="double" format="BEST12." label="ACTIVITYYEAR" xref="ACTIVITYYEAR"/>
+                <column dataType="double" format="BEST12." label="ACTIVITYMONTH" xref="ACTIVITYMONTH"/>
+                <column dataType="double" format="BEST12." label="DURATION_DAYS" xref="DURATION_DAYS"/>
+                <column dataType="double" format="BEST12." label="DURATION_HOURS" xref="DURATION_HOURS"/>
+                <column dataType="string" label="PROPOSITION" xref="PROPOSITION"/>
+                <column dataType="double" format="BEST12." label="PROPOSITION_LOV_ID" xref="PROPOSITION_LOV_ID"/>
+                <column dataType="string" label="PARTER_INVOLVED" xref="partner_involved"/>
+                <column dataType="string" label="SSO" xref="SSO"/>
+                <column dataType="string" label="ACCOUNT_TERRITORY_DESC" xref="ACCOUNT_TERRITORY_DESC"/>
+                <column dataType="string" label="ACCOUNT_TERRITORY_CODE" xref="ACCOUNT_TERRITORY_CODE"/>
+                <column dataType="string" label="ACCOUNT_BICC_GEO1_5LVL" xref="ACCOUNT_BICC_GEO1_5LVL"/>
+                <column dataType="string" label="ACCOUNT_BICC_GEO2_5LVL" xref="ACCOUNT_BICC_GEO2_5LVL"/>
+                <column dataType="string" label="ACCOUNT_BICC_GEO3_5LVL" xref="ACCOUNT_BICC_GEO3_5LVL"/>
+                <column dataType="string" label="ACCOUNT_BICC_GEO4_5LVL" xref="ACCOUNT_BICC_GEO4_5LVL"/>
+                <column dataType="string" label="ACCOUNT_BICC_GEO5_5LVL" xref="ACCOUNT_BICC_GEO5_5LVL"/>
+                <column dataType="double" format="BEST12." label="ACCOUNT_TERRITORY_LOV_ID" xref="ACCOUNT_TERRITORY_LOV_ID"/>
+                <column dataType="string" label="OFFERING_LEVEL_1" xref="OFFERING_LEVEL_1"/>
+                <column dataType="string" label="OFFERING_LEVEL_2" xref="OFFERING_LEVEL_2"/>
+                <column dataType="string" label="OFFERING_LEVEL_3" xref="OFFERING_LEVEL_3"/>
+                <column dataType="string" label="OFFERING_ID" xref="OFFERING_ID"/>
+                <column dataType="string" label="OFFERING_NAME" xref="OFFERING_NAME"/>
+                <column dataType="string" label="OFFERING_12_BYTE_CD" xref="OFFERING_12_BYTE_CD"/>
+                <column dataType="string" label="OFFERING_9_BYTE_CD" xref="OFFERING_9_BYTE_CD"/>
+                <column dataType="string" label="OFFERING_TYPE_DESCRIPTION" xref="OFFERING_TYPE_DESCRIPTION"/>
+                <column dataType="string" label="CREATEDBY" xref="CREATEDBY"/>
+                <column dataType="string" label="CREATEDBY_USERID" xref="CREATEDBY_USERID"/>
+                <column dataType="string" label="CREATEDBY_NAME" xref="CREATEDBY_NAME"/>
+                <column dataType="datetime" format="DATETIME0" label="DATE_CREATED" xref="DATE_CREATED"/>
+                <column dataType="string" label="OWNEDBY" xref="OWNEDBY"/>
+                <column dataType="double" format="BEST12." label="OWNEDBY_EMPLOYEE_ID" xref="OWNEDBY_EMPLOYEE_ID"/>
+                <column dataType="string" label="OWNEDBY_USERID" xref="OWNEDBY_USERID"/>
+                <column dataType="string" label="OWNEDBY_NAME" xref="OWNEDBY_NAME"/>
+                <column dataType="datetime" format="DATETIME0" label="ORION_LOADED" xref="ORION_LOADED"/>
+                <column dataType="string" label="CB_LEVEL_1" xref="CB_LEVEL_1"/>
+                <column dataType="string" label="CB_LEVEL_2" xref="CB_LEVEL_2"/>
+                <column dataType="string" label="CB_LEVEL_3" xref="CB_LEVEL_3"/>
+                <column dataType="string" label="CB_LEVEL_4" xref="CB_LEVEL_4"/>
+                <column dataType="string" label="CB_LEVEL_5" xref="CB_LEVEL_5"/>
+                <column dataType="string" label="CB_LEVEL_6" xref="CB_LEVEL_6"/>
+                <column dataType="string" label="CB_LEVEL_7" xref="CB_LEVEL_7"/>
+                <column dataType="string" label="CB_LEVEL_8" xref="CB_LEVEL_8"/>
+                <column dataType="string" label="CB_LEVEL_9" xref="CB_LEVEL_9"/>
+                <column dataType="string" label="CB_LEVEL_10" xref="CB_LEVEL_10"/>
+                <column dataType="string" label="Opp Milestone on Activity Date" xref="ORIG_OPPORTUNITY_MILESTONE"/>
+                <column dataType="string" label="SELEAD" xref="SELEAD"/>
+                <column dataType="double" format="F32." label="Partner Program ID" xref="partner_program_id"/>
+                <column dataType="string" label="Partner Program Name" xref="partner_program_name"/>
+                <column dataType="string" label="Partner Primary Program" xref="partner_primary_program"/>
+                <column dataType="string" label="partner_tier" xref="partner_tier"/>
+                <column dataType="string" label="partner_status" xref="partner_status"/>
+                <column dataType="string" label="partner_flg" xref="partner_flg"/>
+                <column dataType="string" label="Value proposition" xref="VALUE_PROPOSITION"/>
+                <column dataType="string" label="Sales Play" xref="PROP_ROLL"/>
+                <column dataType="string" label="Portfolio Alignment" xref="PORTFOLIO_ALIGNMENT_DESC"/>
+                <column dataType="double" format="F2." label="WORKBENCH" xref="WORKBENCH_DEMO"/>
+                <column dataType="double" format="COMMA12." label="New Recurring Revenue USM" xref="NRR_OPPORTUNITY_USMAMOUNT"/>
+                <column dataType="double" format="COMMA12." label="New Recurring Revenue" xref="NRR_OPPORTUNITY_AMOUNT"/>
+                <column dataType="double" format="COMMA12." label="Non Recurring Revenue USM" xref="NonRR_OPPORTUNITY_USMAMOUNT"/>
+                <column dataType="double" format="COMMA12." label="Non Recurring Revenue" xref="NonRR_OPPORTUNITY_AMOUNT"/>
+                <column dataType="double" format="BEST12." label="Existing Recurring Revenue USD" xref="ERR_OPPORTUNITY_AMOUNT"/>
+                <column dataType="double" format="BEST12." label="Existing Recurring Revenue USM" xref="ERR_OPPORTUNITY_USMAMOUNT"/>
+                <column dataType="string" label="ROLLUP_NAME" xref="GLOBAL_ACCT_ROLLUP"/>
+                <column dataType="string" label="GLOBAL_ACCT_FLAG" xref="GLOBAL_ACCT_FLAG"/>
+                <column dataType="string" label="Platinum Account Region" xref="Platinum_Account_Region"/>
+                <column dataType="string" label="Platinum Account Country" xref="Platinum_Account_Country"/>
+                <column dataType="string" label="Platinum Account Industry" xref="Platinum_Account_Industry"/>
+                <column dataType="double" format="BEST12." label="Orig Opportunity Id" xref="ORIG_OPPORTUNITY_ID"/>
+                <column dataType="string" label="Orig Stream Category" xref="ORIG_STREAMS_CATEGORY"/>
+                <column dataType="string" label="ORIG_REVENUE_STREAM" xref="ORIG_REVENUE_STREAM"/>
+                <column dataType="double" format="BEST12." label="ORIG_NRR_OPPORTUNITY_USMAMOUNT" xref="ORIG_NRR_OPPORTUNITY_USMAMOUNT"/>
+                <column dataType="double" format="BEST12." label="ORIG_NRR_OPPORTUNITY_AMOUNT" xref="ORIG_NRR_OPPORTUNITY_AMOUNT"/>
+                <column dataType="double" format="BEST12." label="ORIG_NonRR_OPPORTUNITY_USMAMOUNT" xref="ORIG_NonRR_OPPORTUNITY_USMAMOUNT"/>
+                <column dataType="double" format="BEST12." label="ORIG_NonRR_OPPORTUNITY_AMOUNT" xref="ORIG_NonRR_OPPORTUNITY_AMOUNT"/>
+                <column dataType="double" format="BEST12." label="ORIG_ERR_OPPORTUNITY_USMAMOUNT" xref="ORIG_ERR_OPPORTUNITY_USMAMOUNT"/>
+                <column dataType="double" format="BEST12." label="ORIG_ERR_OPPORTUNITY_AMOUNT" xref="ORIG_ERR_OPPORTUNITY_AMOUNT"/>
+                <column dataType="string" label="Joined Opp" xref="JOINED_OPP"/>
+                <column dataType="string" label="OATS_Level_0" xref="OATS_Level_0"/>
+                <column dataType="string" label="OATS_Level_1" xref="OATS_Level_1"/>
+                <column dataType="string" label="OATS_Level_2" xref="OATS_Level_2"/>
+                <column dataType="string" label="OATS_Level_3" xref="OATS_Level_3"/>
+                <column dataType="string" label="OATS_Level_4" xref="OATS_Level_4"/>
+                <column dataType="string" label="OATS_Level_5" xref="OATS_Level_5"/>
+                <column dataType="string" label="OATS_Level_6" xref="OATS_Level_6"/>
+                <column dataType="string" label="OATS_Level_7" xref="OATS_Level_7"/>
+                <column dataType="string" label="OATS_Level_8" xref="OATS_Level_8"/>
+                <column dataType="string" label="OATS_Level_9" xref="OATS_Level_9"/>
+                <column dataType="string" label="is_line_manager_OATS_0" xref="is_line_manager_OATS_0"/>
+                <column dataType="string" label="is_line_manager_OATS_1" xref="is_line_manager_OATS_1"/>
+                <column dataType="string" label="is_line_manager_OATS_2" xref="is_line_manager_OATS_2"/>
+                <column dataType="string" label="is_line_manager_OATS_3" xref="is_line_manager_OATS_3"/>
+                <column dataType="string" label="is_line_manager_OATS_4" xref="is_line_manager_OATS_4"/>
+                <column dataType="string" label="is_line_manager_OATS_5" xref="is_line_manager_OATS_5"/>
+                <column dataType="string" label="is_line_manager_OATS_6" xref="is_line_manager_OATS_6"/>
+                <column dataType="string" label="is_line_manager_OATS_7" xref="is_line_manager_OATS_7"/>
+                <column dataType="string" label="is_line_manager_OATS_8" xref="is_line_manager_OATS_8"/>
+                <column dataType="string" label="is_line_manager_OATS_9" xref="is_line_manager_OATS_9"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds300" resourceIdentifier="GeneratedResource-ge294" tableModifiedTimeStamp="2025-12-02T07:42:52.597Z">
+            <columns/>
+        </table>
+    </tables>
+    <version>2</version>
+</metadataSupplement>

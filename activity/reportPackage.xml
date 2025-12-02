@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<reportPackage>
+    <dataLevel>offline</dataLevel>
+    <files>
+        <file contentKey="ZR3VKSRPUZI7FUOYIRM3FU32D7YFVPSC" name="report" type="report">
+            <links>
+                <link href="/report.xml" method="GET" rel="content" type="application/vnd.sas.report.content" uri="/report.xml"/>
+            </links>
+        </file>
+        <file contentKey="Z6VUML47SBSJ2MA4K22H2LUZLMJXB6NO" name="basems1.css" type="css">
+            <links>
+                <link href="/css/basems1.css" method="GET" rel="content" type="text/css" uri="/css/basems1.css"/>
+            </links>
+        </file>
+        <file contentKey="IXNG6E77GGYYAX33BRF34GG4BDKOQHAG" name="highcontrast.css" type="css">
+            <links>
+                <link href="/css/highcontrast.css" method="GET" rel="content" type="text/css" uri="/css/highcontrast.css"/>
+            </links>
+        </file>
+        <file contentKey="DS2HFWGMQMQ7YG2KHXQGXQFYN6B7ZLC5" name="ms1.css" type="css">
+            <links>
+                <link href="/css/ms1.css" method="GET" rel="content" type="text/css" uri="/css/ms1.css"/>
+            </links>
+        </file>
+        <file contentKey="E7QDGTQ4ML4SCGM52YAM45CRFJFANZ7G" name="dd255.csv" type="data">
+            <links>
+                <link href="/data/dd255.csv" method="GET" rel="content" type="text/csv" uri="/data/dd255.csv"/>
+            </links>
+        </file>
+        <file contentKey="FBIALBM3S7OL2P763NLD3S75FJG7BZRP" name="dd255index.csv" type="data">
+            <links>
+                <link href="/data/dd255index.csv" method="GET" rel="content" type="text/csv" uri="/data/dd255index.csv"/>
+            </links>
+        </file>
+        <file contentKey="MA32YHCBGLKBXBSTL3F4GYLQXJ7RABPM" name="metadataSupplement" type="resource">
+            <links>
+                <link href="/metadataSupplement.xml" method="GET" rel="content" type="application/vnd.sas.report.metadata.supplement" uri="/metadataSupplement.xml"/>
+            </links>
+        </file>
+        <file contentKey="3HXVCZJ7RXNPZSTU47EDD5WFTMVWHT2G" name="viyafonts.css" type="css">
+            <links>
+                <link href="/css/viyafonts.css" method="GET" rel="content" type="text/css" uri="/css/viyafonts.css"/>
+            </links>
+        </file>
+        <file contentKey="GWBEY45BDPJKVXB6NDWN3DRW54INU6VG" name="settings" type="resource">
+            <links>
+                <link href="/settings.json" method="GET" rel="content" type="application/vnd.sas.attributes" uri="/settings.json"/>
+            </links>
+        </file>
+        <file contentKey="WHOXL6SJ6KFQE3JWZ57UWWUXS63SRW6A" name="packageStatusReport.txt" type="status">
+            <links>
+                <link href="/packageStatusReport.txt" method="GET" rel="content" type="text/plain" uri="/packageStatusReport.txt"/>
+            </links>
+        </file>
+        <file contentKey="CEPTVY3AFEFMZXCLDJFYKTFQCPGN7H6T" name="index.html" type="html">
+            <links>
+                <link href="/index.html" method="GET" rel="content" type="text/html" uri="/index.html"/>
+            </links>
+        </file>
+        <file contentKey="TGE42BMVXL5OZ4EUGDSFKXRPBKQ5SP22" name="packageIndex.html" type="html">
+            <links>
+                <link href="/packageIndex.html" method="GET" rel="content" type="text/html" uri="/packageIndex.html"/>
+            </links>
+        </file>
+    </files>
+    <formatLocale>fr</formatLocale>
+    <generatedTimeStamp>2025-12-02T09:11:20.930Z</generatedTimeStamp>
+    <id>c_d3fa98d7-eb4b-4399-ab6c-c94c20e215ec</id>
+    <links>
+        <link href="/reportPackages/packages/c_d3fa98d7-eb4b-4399-ab6c-c94c20e215ec" method="GET" rel="self" type="application/vnd.sas.report.package" uri="/reportPackages/packages/c_d3fa98d7-eb4b-4399-ab6c-c94c20e215ec"/>
+        <link href="/reportData/results?reportContentKey=NIN22WYAI2NIA3ESPNCJRISC3IL5FSBS" method="POST" rel="requery" responseType="application/vnd.sas.report.results" type="application/vnd.sas.report.query.state" uri="/reportData/results?reportContentKey=NIN22WYAI2NIA3ESPNCJRISC3IL5FSBS"/>
+        <link href="/reportData/jobs?reportContentKey=NIN22WYAI2NIA3ESPNCJRISC3IL5FSBS" method="POST" rel="requeryJob" responseType="application/vnd.sas.report.data.job" type="application/vnd.sas.report.query.state" uri="/reportData/jobs?reportContentKey=NIN22WYAI2NIA3ESPNCJRISC3IL5FSBS"/>
+    </links>
+    <locale>fr</locale>
+    <modifiedTimeStamp>2025-12-02T07:42:52.597Z</modifiedTimeStamp>
+    <reportElements>vi6,ve369,ve453,ve424,ve432</reportElements>
+    <size>238845</size>
+    <source>JSON:/reports/reports/09ac4483-511f-4dce-ba32-2d8def7e5c7f</source>
+    <version>62</version>
+    <warnings>result</warnings>
+</reportPackage>
