@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataSupplement>
+    <tables>
+        <table dataLocale="fr_FR" dataSources="ds3132" resourceIdentifier="'cas-shared-epic','SWEE','CLIMATE_BANKS_OUT_STATS','fr_FR'" tableModifiedTimeStamp="2025-12-02T12:00:14.410Z">
+            <columns>
+                <column dataType="double" format="BEST12." label="bank_count" xref="bank_count"/>
+                <column dataType="double" format="PERCENT8.2" label="bank_percent" xref="bank_percent"/>
+                <column dataType="string" label="Concept_N0" xref="Concept_N0"/>
+                <column dataType="string" label="Concept_N1" xref="Concept_N1"/>
+                <column dataType="string" label="Concept_N2" xref="Concept_N2"/>
+                <column dataType="string" label="allowed_values" xref="allowed_values"/>
+                <column dataType="double" format="BEST12." label="bank_total" xref="bank_total"/>
+                <column dataType="double" format="BEST12." label="target_percent" xref="target_percent"/>
+            </columns>
+        </table>
+        <table dataLocale="fr_FR" dataSources="ds4734" resourceIdentifier="'cas-shared-epic','SWEE','CLIMATE_BANKS_IN_LIST','fr_FR'" tableModifiedTimeStamp="2025-12-02T12:00:13.212Z">
+            <columns>
+                <column dataType="double" format="BEST12." label="bank_id" xref="bank_id"/>
+                <column dataType="string" label="bank_name" xref="bank_name"/>
+                <column dataType="string" label="country_iso" xref="country_iso"/>
+                <column dataType="string" label="country" xref="country"/>
+                <column dataType="string" label="exposures" xref="exposures"/>
+                <column dataType="string" label="importance" xref="importance"/>
+                <column dataType="string" label="bank_size" xref="bank_size"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds8826" resourceIdentifier="'cas-shared-epic','SWEE','CLIMATE_EXTRACTION_OUT','en_US'" tableModifiedTimeStamp="2025-12-02T12:00:14.885Z">
+            <columns>
+                <column dataType="string" label="bank_name" xref="bank_name"/>
+                <column dataType="string" label="concept_N0" xref="concept_N0"/>
+                <column dataType="string" label="concept_N1" xref="concept_N1"/>
+                <column dataType="string" label="concept_N2" xref="concept_N2"/>
+                <column dataType="string" label="concept_N3" xref="concept_N3"/>
+                <column dataType="string" label="concept_value" xref="concept_value"/>
+                <column dataType="string" label="context_id" xref="context_id"/>
+                <column dataType="string" label="quote" xref="quote"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds9452" resourceIdentifier="'cas-shared-epic','SWEE','CLIMATE_IDEA_GANTT','en_US'" tableModifiedTimeStamp="2025-12-02T12:00:14.611Z">
+            <columns>
+                <column dataType="string" label="type" xref="type"/>
+                <column dataType="string" label="task" xref="task"/>
+                <column dataType="date" format="DATE11" label="Actual Start" xref="Actual Start"/>
+                <column dataType="date" format="DATE11" label="Actual Finish" xref="Actual Finish"/>
+            </columns>
+        </table>
+        <table dataLocale="en_US" dataSources="ds10619" resourceIdentifier="'cas-shared-epic','SWEE','CLIMATE_EXTRAC_OUT_V2','en_US'" tableModifiedTimeStamp="2025-12-02T12:00:14.872Z">
+            <columns>
+                <column dataType="string" label="bank_name" xref="bank_name"/>
+                <column dataType="string" label="concept_N0" xref="concept_N0"/>
+                <column dataType="string" label="concept_N1" xref="concept_N1"/>
+                <column dataType="string" label="concept_N2" xref="concept_N2"/>
+                <column dataType="string" label="concept_N3" xref="concept_N3"/>
+                <column dataType="string" label="concept_value" xref="concept_value"/>
+                <column dataType="string" label="context_id" xref="context_id"/>
+                <column dataType="string" label="quote" xref="quote"/>
+                <column dataType="double" format="BEST12." label="Unique_ID" xref="Unique_ID"/>
+            </columns>
+        </table>
+    </tables>
+    <version>2</version>
+</metadataSupplement>

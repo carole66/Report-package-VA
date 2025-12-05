@@ -1,0 +1,9 @@
+Text topics - quote 1
+  Interactivity for this object is limited for the following reasons:
+    * Actions for composite objects are not supported.
+
+Quotes - Quote List (1)
+  Interactivity for this object is limited for the following reasons:
+    * The set of possible values for parameter "textSearch" could not be derived. Parameters must be bound to data.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses a data item, filter, or rank that references a parameter.
