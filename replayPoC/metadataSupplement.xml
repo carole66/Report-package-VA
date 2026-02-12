@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadataSupplement>
+    <tables>
+        <table dataLocale="en_US" dataSources="ds7" resourceIdentifier="'cas-shared-default','Public','TEST_VA_ECOLAB_BACKTESTS','en'" tableModifiedTimeStamp="2026-02-09T10:51:25.335Z">
+            <columns>
+                <column dataType="string" label="node" xref="node"/>
+                <column dataType="string" label="region" xref="region"/>
+                <column dataType="double" format="BEST12." label="loop" xref="loop"/>
+                <column dataType="date" format="MONYY7" label="startdate_horizon" xref="startdate_horizon"/>
+                <column dataType="double" format="BEST12." label="nStep" xref="nStep"/>
+                <column dataType="double" format="BEST12." label="LAG" xref="LAG"/>
+                <column dataType="string" label="Selling_Division" xref="Selling_Division"/>
+                <column dataType="string" label="Sales_Org" xref="Sales_Org"/>
+                <column dataType="string" label="ITEM_CFL" xref="ITEM_CFL"/>
+                <column dataType="date" format="MONYY7" label="Time ID Values" xref="YM"/>
+                <column dataType="double" format="BEST12." label="ACTUALCLEAN" xref="ACTUALCLEAN"/>
+                <column dataType="double" format="BEST12." label="PREDICT" xref="PREDICT"/>
+                <column dataType="string" label="_VOLUME_VOLATILITY_CLASS" xref="_VOLUME_VOLATILITY_CLASS"/>
+                <column dataType="string" label="_DEMAND_CLASS" xref="_DEMAND_CLASS"/>
+                <column dataType="string" label="ABCxyz" xref="ABCxyz"/>
+                <column dataType="string" label="_SEG_" xref="_SEG_"/>
+                <column dataType="double" format="BEST12." label="ActualRaw" xref="ActualRaw"/>
+                <column dataType="double" format="BEST12." label="PredictSO99" xref="PredictSO99"/>
+            </columns>
+        </table>
+    </tables>
+    <version>3</version>
+</metadataSupplement>

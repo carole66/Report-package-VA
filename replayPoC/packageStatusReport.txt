@@ -1,0 +1,101 @@
+Treemap - _DEMAND_CLASS 1
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses an aggregate measure.
+
+List table - Time ID Values 1
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses an aggregate measure.
+
+Time - Time ID Values 3
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses an aggregate measure.
+
+Time - Time ID Values 2
+  The data is not available. The data for this object could not be retrieved.
+    * The report object is not completely defined.
+
+Key value - FA SO99 1
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses an aggregate measure.
+
+Key value - Bias SO99 1
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses an aggregate measure.
+
+Key value - Nb TS L3 1
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses an aggregate measure.
+
+BC Key value - FA 2
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses an aggregate measure.
+
+BC Key value - Bias 1
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses an aggregate measure.
+
+BC Key value - Nb TS L3 3
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses an aggregate measure.
+
+BC Key value - Delta FA 1
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses an aggregate measure.
+
+BC Key value - Delta Bias 1
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses an aggregate measure.
+
+BC Line - FA SO99 1
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses an aggregate measure.
+
+BC Line - Bias SO99
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses an aggregate measure.
+
+BC List table - Candidate 1
+  Interactivity for this object is limited for the following reasons:
+    * The data to support actions could not be retrieved. Query limit exceeded: 10000000+ queries required. Query limit = 20000.
+    * This object is the target of a multiple-selection list control, which can generate a lot of query combinations.
+  These reasons might only be a problem because of these data complexities:
+    * This object uses an aggregate measure.
