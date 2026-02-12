@@ -1,0 +1,421 @@
+
+
+#ve1556 .GraphDataStyle1 {
+  marker-color: #0098cc;
+  text-color: #0098cc;
+  line-color: #0098cc;
+}
+#ve1556 .GraphDataStyle4 {
+  marker-color: #b0b7c2;
+  text-color: #b0b7c2;
+  line-color: #b0b7c2;
+}
+#ve953 .Container {
+  background-color: #DB127D;
+  transparency: 0;
+  border-color: var(--custom-color-2);
+  border-width: 10px;
+}
+#ve1556 .GraphDataStyle2 {
+  marker-color: #DB127D;
+  text-color: #DB127D;
+  line-color: #DB127D;
+}
+#ve1556 .GraphDataStyle3 {
+  marker-color: #000000;
+  text-color: #000000;
+  line-color: #000000;
+}
+#ve470 .Header {
+  color: #0098CC;
+  font-size: 12pt;
+}
+#ve1018 .GraphDataStyle2 {
+  marker-color: #DB127D;
+  text-color: #DB127D;
+  line-color: #DB127D;
+}
+#ve1018 .GraphDataStyle1 {
+  marker-color: #0098CC;
+  text-color: #0098CC;
+  line-color: #0098CC;
+}
+#ve447 .styleForTitle_span1 {
+  color: #0098CC;
+  font-weight: bold;
+  font-size: 12pt;
+}
+#ve953 .ReportElementContainer {
+  padding: 20px;
+}
+#ve1018 .GraphDataStyle4 {
+  marker-color: #b0b7c2;
+  text-color: #b0b7c2;
+  fill-color: #B0B7C2;
+  line-color: #b0b7c2;
+}
+#ve1018 .GraphDataStyle3 {
+  marker-color: #000000;
+  text-color: #000000;
+  fill-color: #000000;
+  line-color: #000000;
+}
+#ve455 .TipFill {
+  fill-color: var(--custom-color-1);
+}
+#ve484 .GraphDataStyle1 {
+  fill-color: #16976D;
+}
+#ve197 .CheckBoxList {
+  color: #2470AD;
+}
+#ve427 .Container {
+  background-color: #0098CC;
+  transparency: 0;
+  border-color: var(--custom-color-2);
+  border-width: 10px;
+}
+#ve484 .GraphDataStyleDefault {
+  fill-color: #16976D;
+}
+#ve455 .LegendFill {
+  fill-color: #000000;
+}
+#ve239 .Container {
+  background-color: #E9ECEF;
+  transparency: 0.8;
+}
+#ve1089 .Container {
+  border-width: 1px;
+  border-color: #EAF1F7;
+}
+#ve470 .tableColumnbi667 {
+  width: 134px;
+}
+#ve439 .ReportElementContainer {
+  padding: 20px;
+}
+#ve969 .Container {
+  background-color: #DB127D;
+  transparency: 0;
+  border-color: var(--custom-color-2);
+  border-width: 10px;
+}
+#ve998 .ReportElementContainer {
+  padding: 16px;
+}
+#ve447 .GridLines {
+  line-thickness: 1px;
+}
+#ve420 .Container {
+  background-color: #0098CC;
+  transparency: 0;
+  border-color: var(--custom-color-2);
+  border-width: 10px;
+}
+#ve200 .Container {
+  background-color: #EAF1F7;
+  transparency: 0.8;
+}
+#ve197 .styleForTitle_span1 {
+  color: #545B66;
+  font-weight: bold;
+  font-size: 12pt;
+}
+#ve447 .TipFill {
+  fill-color: #54b6a4;
+}
+#ve1018 .GraphDataStyleDefault {
+  marker-color: #0098CC;
+  text-color: #0098CC;
+  line-color: #0098CC;
+}
+#ve515 .ButtonBar {
+  background-color: #E9ECEF;
+}
+#ve1056 .GraphDataStyleDefault {
+  marker-color: #0098cc;
+  text-color: #0098cc;
+  line-color: #0098cc;
+}
+#ve455 .GridLines {
+  line-thickness: 1px;
+}
+#ve515 .Container {
+  background-color: #EAF1F7;
+  transparency: 0.8;
+}
+#ve969 .ReportElementContainer {
+  padding: 20px;
+}
+#ve1095 .Container {
+  border-width: 1px;
+  border-color: #EAF1F7;
+}
+#ve455 .ReportElementContainer {
+  padding: 20px;
+}
+#ve1511 .styleForTitle_span1 {
+  font-size: 12pt;
+}
+#ve554 .Container {
+  background-color: #E9ECEF;
+  transparency: 0.8;
+}
+#ve1056 .Container {
+  background-color: #FFFFFF;
+  transparency: 0;
+}
+#ve200 .VisualPromptContainer {
+  background-color: #FFFFFF;
+  color: #2470AD;
+  font-weight: bold;
+}
+#ve1018 .Container {
+  background-color: #FFFFFF;
+  transparency: 0;
+}
+:root {
+  --custom-color-2: var(--report-background-color);
+  --custom-color-3: #FFFFFF;
+  --custom-color-1: var(--report-data-color-3);
+}
+#ve985 .Container {
+  background-color: #DB127D;
+  transparency: 0;
+  border-color: var(--custom-color-2);
+  border-width: 10px;
+}
+#ve439 .TipFill {
+  fill-color: var(--custom-color-1);
+}
+#ve420 .ReportElementContainer {
+  padding: 20px;
+}
+#cd564 .If {
+  color: #2470AD;
+  font-weight: bold;
+}
+#ve1045 .tableColumnbi924 {
+  width: 106px;
+}
+#ve200 .ButtonBar {
+  background-color: #E9ECEF;
+}
+#ve554 .VisualPromptContainer {
+  color: #0098CC;
+  font-weight: bold;
+}
+#ve455 .GraphDataStyleDefault {
+  marker-color: #0098CC;
+  text-color: #0098CC;
+  fill-color: var(--custom-color-1);
+  line-color: #0098CC;
+}
+#ve470 .tableColumnbi635 {
+  width: 136px;
+}
+#ve470 .tableColumnbi636 {
+  width: 110px;
+}
+#ve439 .GridLines {
+  line-thickness: 1px;
+}
+#ve470 .tableColumnbi634 {
+  width: 98px;
+}
+#cd996 .If {
+  color: #DD5757;
+}
+#ve470 .tableColumnbi631 {
+  fill-gradient-start-color: #E2F2FF;
+  fill-gradient-end-color: #0098CC;
+  width: 95px;
+}
+#ve470 .tableColumnbi632 {
+  width: 93px;
+}
+#ve998 .Container {
+  border-width: 10px;
+  border-color: #FFFFFF;
+}
+#ve439 .GraphDataStyleDefault {
+  marker-color: #000000;
+  text-color: #000000;
+  fill-color: var(--custom-color-1);
+  line-color: #000000;
+}
+#ve455 .TipText {
+  text-color: var(--custom-color-3);
+}
+#ve1005 .Container {
+  border-width: 10px;
+  border-color: #FFFFFF;
+}
+#ve985 .ReportElementContainer {
+  padding: 20px;
+}
+#ve1556 .GraphDataStyleDefault {
+  marker-color: #0098cc;
+  text-color: #0098cc;
+  line-color: #0098cc;
+}
+#ve470 .Table {
+  padding-top: 16px;
+  horizontal-line-style: solid;
+  vertical-line-style: none;
+  font-size: 10pt;
+}
+#ve447 .GraphDataStyleDefault {
+  marker-color: #0098CC;
+  text-color: #0098CC;
+  fill-color: var(--custom-color-1);
+  line-color: #0098CC;
+}
+#ve527 .ButtonBar {
+  selected-color: #2470AD;
+}
+#ve447 .ReportElementContainer {
+  padding: 20px;
+}
+#ve266 .Container {
+  background-color: #E9ECEF;
+  transparency: 0.8;
+}
+#ve439 .styleForTitle_span11 {
+  color: var(--custom-color-1);
+  font-weight: bold;
+  font-size: 18pt;
+}
+#ve447 .GraphDataStyle1 {
+  marker-color: #0098CC;
+  text-color: #0098CC;
+  fill-color: var(--custom-color-1);
+  line-color: #0098CC;
+}
+#ve447 .GraphDataStyle2 {
+  marker-color: #000000;
+  text-color: #000000;
+  line-color: #000000;
+}
+#ve447 .GraphDataStyle3 {
+  marker-color: #b0b7c2;
+  text-color: #b0b7c2;
+  line-color: #b0b7c2;
+}
+#ve413 .Container {
+  background-color: #0098CC;
+  transparency: 0;
+  border-color: var(--custom-color-2);
+  border-width: 10px;
+}
+#ve439 .TipText {
+  text-color: var(--custom-color-3);
+}
+#ve455 .GraphDataStyle3 {
+  marker-color: #545b66;
+  text-color: #545b66;
+  line-color: #545b66;
+}
+#ve455 .GraphDataStyle2 {
+  marker-color: #000000;
+  text-color: #000000;
+  line-color: #000000;
+}
+#ve455 .GraphDataStyle1 {
+  marker-color: #0098CC;
+  text-color: #0098CC;
+  fill-color: var(--custom-color-1);
+  line-color: #0098CC;
+}
+#ve1005 .ReportElementContainer {
+  padding: 16px;
+}
+#ve1056 .GraphDataStyle2 {
+  marker-color: #DB127D;
+  text-color: #DB127D;
+  line-color: #DB127D;
+}
+#ve1056 .GraphDataStyle1 {
+  marker-color: #0098cc;
+  text-color: #0098cc;
+  line-color: #0098cc;
+}
+#ve1056 .GraphDataStyle4 {
+  marker-color: #b0b7c2;
+  text-color: #b0b7c2;
+  line-color: #b0b7c2;
+}
+#ve1056 .GraphDataStyle3 {
+  marker-color: #000000;
+  text-color: #000000;
+  line-color: #000000;
+}
+#ve413 .ReportElementContainer {
+  padding: 20px;
+}
+#ve427 .ReportElementContainer {
+  padding: 20px;
+}
+#ve1556 .Container {
+  background-color: #FFFFFF;
+  transparency: 0;
+}
+#ve484 .TwoColorRamp {
+  fill-gradient-start-color: #E2F2FF;
+  fill-gradient-end-color: #0098CC;
+}
+#vi488 .ReportPagePadding {
+  padding: 16px;
+}
+#ve266 .VisualPromptContainer {
+  color: #0098CC;
+  font-weight: bold;
+}
+#ve566 .span2 {
+  font-weight: bold;
+}
+#ve566 .span1 {
+  font-weight: bold;
+}
+#ve515 .VisualPromptContainer {
+  background-color: #FFFFFF;
+  color: #0098CC;
+  font-weight: bold;
+}
+#ve1045 .tableColumnbi37 {
+  width: 48px;
+}
+#ve439 .GraphDataStyle2 {
+  marker-color: #B0B7C2;
+  text-color: #B0B7C2;
+  line-color: #B0B7C2;
+}
+#ve439 .styleForTitle_paragraph6 {
+  text-align: left;
+}
+#ve439 .GraphDataStyle1 {
+  marker-color: #000000;
+  text-color: #000000;
+  fill-color: var(--custom-color-1);
+  line-color: #000000;
+}
+#ve439 .GraphDataStyle3 {
+  marker-color: #0098CC;
+  text-color: #0098CC;
+  line-color: #0098CC;
+}
+#ve447 .TipText {
+  text-color: var(--custom-color-3);
+}
+#ve239 .VisualPromptContainer {
+  color: #0098CC;
+  font-weight: bold;
+}
+#ve455 .styleForTitle_span1 {
+  color: #0098CC;
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+			
