@@ -1039,9 +1039,9 @@ ELSE (0)</Property>
 		<NavigationAction type="report" value="/reports/reports/fd04be50-eaf6-4b4f-ab0c-cac3c2cf637b" behavior="filter" label="About" name="ac175">
 			<NavigationAction type="section" value="vi920" label="Cases" name="ac174"/>
 		</NavigationAction>
-		<NavigationAction type="report" value="/reports/reports/fd04be50-eaf6-4b4f-ab0c-cac3c2cf637b" behavior="filter" label="About" name="ac191">
-			<NavigationAction type="section" value="vi348" label="Flags" name="ac190"/>
-		</NavigationAction>
+				<NavigationAction type="url" value="https://carole66.github.io/Report-package-VA/About/" label="Flags documentation" name="ac191"/>
+
+
 		<NavigationAction type="report" value="/reports/reports/f6f5adef-4ee6-4cd2-8e8b-e077761479b6" behavior="filter" label="Impacts" name="ac205">
 			<NavigationAction type="section" value="vi418" label="DClass impact" name="ac204"/>
 		</NavigationAction>
