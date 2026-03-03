@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SASReport xmlns="http://www.sas.com/sasreportmodel/bird-4.59.0" label="Home page" features="promptModelV2" implicitInteractions="reportPrompt sectionPrompt sectionLink" createdLocale="en_US" createdVersion="4.59.0" dateCreated="2026-02-13T14:29:35Z" dateModified="2026-02-26T11:26:46Z" createdApplication="SAS Visual Analytics" lastModifiedApplication="SAS Visual Analytics" nextUniqueNameIndex="247">
+	<Results>
+		<Result ref="dd125" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2026-03-03T15:57:06.854Z">
+			<Variables>
+				<NumericVariable format="COMMA12." usage="quantitative" definedAggregation="totalCount" label="Frequency" ref="bi126" varname="bi126" column="c0"/>
+			</Variables>
+			<Columns>
+				<NumericColumn dataType="double" colname="c0" encoding="text"/>
+			</Columns>
+			<Data isIndexed="false" availableRowCount="1" contentKey="ZWQTRTK4H73V2ROJVT3LID6DSATMBKVU" size="10" format="CSV" rowCount="1" grandTotal="false" dataLayout="minimal"><![CDATA[2897399.0
+]]></Data>
+		</Result>
+		<Result ref="dd136" type="relational" status="success" dataLevel="baseline" label="Results" dataLocale="en_US" consumerDataModel="aggregated" supportsExportDetail="true" supportsCustomQuery="true" sortLocale="en_US" tableDateModified="2026-03-03T15:57:07.521Z">
+			<Variables>
+				<NumericVariable format="COMMA12." usage="quantitative" definedAggregation="totalCount" label="Frequency" ref="bi137" varname="bi137" column="c0"/>
+			</Variables>
+			<Columns>
+				<NumericColumn dataType="double" colname="c0" encoding="text"/>
+			</Columns>
+			<Data isIndexed="false" availableRowCount="1" contentKey="PUVHOH6ZNAI4O5REN7TW76VXENSJVGGQ" size="10" format="CSV" rowCount="1" grandTotal="false" dataLayout="minimal"><![CDATA[1848009.0
+]]></Data>
+		</Result>
+	</Results>
+	<DataDefinitions>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds7" name="dd127">
+			<BusinessItems>
+				<RelationalDataItem name="bi126" base="bi20"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds7" type="relational" name="dd128">
+				<RelationalQuery detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi126"/>
+						</Axis>
+					</Axes>
+				</RelationalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" name="dd125"/>
+				</ResultDefinitions>
+			</DataDefinition>
+		</ParentDataDefinition>
+		<ParentDataDefinition childQueryRelationship="independent" status="executable" dataSource="ds8" name="dd138">
+			<BusinessItems>
+				<RelationalDataItem name="bi137" base="bi55"/>
+			</BusinessItems>
+			<DataDefinition dataSource="ds8" type="relational" name="dd139">
+				<RelationalQuery detail="false">
+					<Axes>
+						<Axis type="column">
+							<BusinessItem ref="bi137"/>
+						</Axis>
+					</Axes>
+				</RelationalQuery>
+				<ResultDefinitions>
+					<ResultDefinition purpose="primary" name="dd136"/>
+				</ResultDefinitions>
+			</DataDefinition>
+		</ParentDataDefinition>
+	</DataDefinitions>
+	<DataSources>
+		<DataSource label="ECOLAB_NEW" type="relational" name="ds7">
+			<CasResource server="cas-shared-default" library="Public" table="ECOLAB_NEW" locale="en"/>
+			<BusinessItemFolder>
+				<DataItem name="bi16" xref="ABCxyz"/>
+				<DataItem name="bi17" xref="ActualClean"/>
+				<DataItem name="bi10" xref="ActualRaw"/>
+				<DataItem name="bi18" xref="Customer"/>
+				<DataItem name="bi14" xref="ITEM_CFL"/>
+				<DataItem name="bi11" xref="PredictSO99"/>
+				<DataItem name="bi13" xref="Sales_Org"/>
+				<DataItem name="bi12" xref="Selling_Division"/>
+				<DataItem name="bi19" xref="YM"/>
+				<PredefinedDataItem calculation="totalCount" name="bi20" label="Frequency" usage="quantitative" format="COMMA12."/>
+				<PredefinedDataItem calculation="totalCountPercent" name="bi21" label="Frequency Percent" usage="quantitative" format="PERCENT20.2"/>
+				<DataItem name="bi22" label="Month" xref="YM" format="MONTH7"/>
+				<DataItem name="bi23" label="Year" xref="YM" format="YEAR4"/>
+				<AggregateCalculatedItem dataType="double" name="bi24" label="Bias SO99" format="PERCENT12.2">
+					<Expression>div(minus(aggregate(sum,group,${bi10,raw}),aggregate(sum,group,${bi11,raw})),aggregate(sum,group,${bi11,raw}))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">(Sum(ByGroup,ActualRaw)-Sum(ByGroup,PredictSO99))/Sum(ByGroup,PredictSO99)</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi25" label="FA SO99" format="PERCENT12.2">
+					<Expression>minus(1,div(aggregate(sum,group,abs(minus(${bi11,raw},${bi10,raw}))),aggregate(sum,group,${bi10,raw})))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">1 - Sum(ByGroup,Abs(PredictSO99-ActualRaw))/Sum(ByGroup,ActualRaw)</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi26" label="MAE SO99" format="COMMA12.2">
+					<Expression>aggregate(average,group,abs(minus(${bi11,raw},${bi10,raw})))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Avg(ByGroup,Abs(PredictSO99-ActualRaw))</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<CalculatedItem dataType="string" name="bi15" label="Time_series" usage="categorical" format="$." aggregation="sum">
+					<Expression>concatenate(${bi12,binned},concatenate(${bi13,binned},${bi14,binned}))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Concatenate(Selling_Division,Concatenate(Sales_Org,ITEM_CFL))</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi27" label="Nb TS L3" format="COMMA12.2">
+					<Expression>aggregate(countDistinct,all,${bi15,binned})</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Distinct(ForAll,Time_series)</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+			</BusinessItemFolder>
+		</DataSource>
+		<DataSource label="TEST_VA_ECOLAB_BACKTESTS" type="relational" name="ds8">
+			<CasResource server="cas-shared-default" library="Public" table="TEST_VA_ECOLAB_BACKTESTS" locale="en"/>
+			<BusinessItemFolder>
+				<DataItem name="bi46" xref="_DEMAND_CLASS"/>
+				<DataItem name="bi47" xref="_SEG_"/>
+				<DataItem name="bi48" xref="_VOLUME_VOLATILITY_CLASS"/>
+				<DataItem name="bi37" xref="ACTUALCLEAN" format="COMMA12."/>
+				<DataItem name="bi29" xref="ActualRaw" format="COMMA12."/>
+				<DataItem name="bi33" xref="ITEM_CFL"/>
+				<DataItem name="bi49" xref="LAG" aggregation="min"/>
+				<DataItem name="bi50" xref="loop"/>
+				<DataItem name="bi41" xref="node"/>
+				<DataItem name="bi51" xref="nStep"/>
+				<DataItem name="bi28" xref="PREDICT" format="COMMA12."/>
+				<DataItem name="bi30" xref="PredictSO99" format="COMMA12."/>
+				<DataItem name="bi52" xref="region"/>
+				<DataItem name="bi32" xref="Sales_Org"/>
+				<DataItem name="bi31" xref="Selling_Division"/>
+				<DataItem name="bi53" xref="startdate_horizon"/>
+				<DataItem name="bi54" xref="YM"/>
+				<PredefinedDataItem calculation="totalCount" name="bi55" label="Frequency" usage="quantitative" format="COMMA12."/>
+				<PredefinedDataItem calculation="totalCountPercent" name="bi56" label="Frequency Percent" usage="quantitative" format="PERCENT20.4"/>
+				<AggregateCalculatedItem dataType="double" name="bi42" label="FA" format="PERCENT12.2">
+					<Expression>minus(1,div(aggregate(sum,group,abs(minus(${bi28,raw},${bi29,raw}))),aggregate(sum,group,${bi29,raw})))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">1 - Sum(ByGroup,Abs(PREDICT-ActualRaw))/Sum(ByGroup,ActualRaw)</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi43" label="FA SO99" format="PERCENT12.2">
+					<Expression>minus(1,div(aggregate(sum,group,abs(minus(${bi30,raw},${bi29,raw}))),aggregate(sum,group,${bi29,raw})))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">1 - Sum(ByGroup,Abs(PredictSO99-ActualRaw))/Sum(ByGroup,ActualRaw)</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi44" label="Bias" format="PERCENT12.2">
+					<Expression>div(minus(aggregate(sum,group,${bi29,raw}),aggregate(sum,group,${bi28,raw})),aggregate(sum,group,${bi28,raw}))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">(Sum(ByGroup,ActualRaw)-Sum(ByGroup,PREDICT))/Sum(ByGroup,PREDICT)</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi45" label="Bias SO99" format="PERCENT12.2">
+					<Expression>div(minus(aggregate(sum,group,${bi29,raw}),aggregate(sum,group,${bi30,raw})),aggregate(sum,group,${bi30,raw}))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">(Sum(ByGroup,ActualRaw)-Sum(ByGroup,PredictSO99))/Sum(ByGroup,PredictSO99)</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<DataItem name="bi57" label="Month" xref="YM" format="MONTH7"/>
+				<DataItem name="bi58" label="Year" xref="YM" format="YEAR4"/>
+				<AggregateCalculatedItem dataType="double" name="bi59" label="MAE" format="COMMA12.2">
+					<Expression>aggregate(average,group,abs(minus(${bi28,raw},${bi29,raw})))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Avg(ByGroup,Abs(PREDICT-ActualRaw))</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi60" label="MAESO99" format="COMMA12.2">
+					<Expression>aggregate(average,group,abs(minus(${bi30,raw},${bi29,raw})))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Avg(ByGroup,Abs(PredictSO99-ActualRaw))</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi61" label="Impact*100" format="COMMA12.4">
+					<Expression>times(minus(div(minus(aggregate(sum,all,abs(minus(${bi28,raw},${bi29,raw}))),aggregate(sum,group,abs(minus(${bi28,raw},${bi29,raw})))),minus(aggregate(sum,all,${bi29,raw}),aggregate(sum,group,${bi29,raw}))),div(aggregate(sum,all,abs(minus(${bi28,raw},${bi29,raw}))),aggregate(sum,all,${bi29,raw}))),100)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">(
+    (
+        Sum(ForAll,Abs(Predict-ActualRaw))
+        -
+        Sum(ByGroup,Abs(PREDICT-ActualRaw))
+        )
+    /
+    (
+        Sum(ForAll,ActualRaw)
+        -
+        Sum(ByGroup,ActualRaw)
+        )
+    -
+    (
+        Sum(ForAll,Abs(PREDICT-ActualRaw))/Sum(ForAll,ActualRaw)
+    )
+)
+*100</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<DataItem name="bi62" label="LAG (1)" xref="LAG" usage="categorical" aggregation="min"/>
+				<CalculatedItem dataType="string" name="bi34" label="Time_series" usage="categorical" format="$." aggregation="sum">
+					<Expression>concatenate(${bi31,binned},concatenate(${bi32,binned},${bi33,binned}))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Concatenate(Selling_Division,Concatenate(Sales_Org,ITEM_CFL))</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi63" label="Nb TS L3" format="COMMA12.2">
+					<Expression>aggregate(countDistinct,all,${bi34,binned})</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Distinct(ForAll,Time_series)</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi64" label="FAwo" format="COMMA12.2">
+					<Expression>minus(1,div(minus(aggregate(sum,all,abs(minus(${bi28,raw},${bi29,raw}))),aggregate(sum,group,abs(minus(${bi28,raw},${bi29,raw})))),minus(aggregate(sum,all,${bi29,raw}),aggregate(sum,group,${bi29,raw}))))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">  1-  (
+        Sum(ForAll,Abs(Predict-ActualRaw))
+        -
+        Sum(ByGroup,Abs(PREDICT-ActualRaw))
+        )
+    /
+    (
+        Sum(ForAll,ActualRaw)
+        -
+        Sum(ByGroup,ActualRaw)
+        )</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi36" label="ActualRawTotal" format="COMMA12.2">
+					<Expression>aggregate(sum,all,${bi29,raw})</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Sum(ForAll,ActualRaw)</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi35" label="AbsErrorTotal" format="COMMA12.2">
+					<Expression>aggregate(sum,all,abs(minus(${bi28,raw},${bi29,raw})))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Sum(ForAll,Abs(Predict-ActualRaw))</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi65" label="Impact*100 (1)" format="COMMA12.2">
+					<Expression>times(minus(div(minus(${bi35,raw},aggregate(sum,group,abs(minus(${bi28,raw},${bi29,raw})))),minus(${bi36,raw},aggregate(sum,group,${bi29,raw}))),div(${bi35,raw},${bi36,raw})),100)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">(
+    (
+        AbsErrorTotal
+        -
+        Sum(ByGroup,Abs(PREDICT-ActualRaw))
+        )
+    /
+    (
+        ActualRawTotal
+        -
+        Sum(ByGroup,ActualRaw)
+        )
+    -
+    (
+        AbsErrorTotal/ActualRawTotal
+    )
+)
+*100</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<CalculatedItem dataType="double" name="bi39" label="FlagTrain2" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(notIn(${bi29,raw},.,0),notIn(${bi30,raw},.,0),in(${bi28,raw},.,0),in(${bi37,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (NotIn(ActualRaw ,.,0)) AND (NotIn(PredictSO99 ,.,0)) AND (In(PREDICT ,.,0)) AND (In(ActualClean ,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi66" label="FlagTrain3" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(eq(${bi38,raw},0),eq(${bi39,raw},0),gt(div(${bi37,raw},${bi29,raw}),2),gt(div(${bi28,raw},${bi30,raw}),2)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF FlagTrain1 = 0 AND FlagTrain2 = 0 AND ACTUALCLEAN / ActualRaw &gt; 2 AND PREDICT / PredictSO99 &gt; 2
+    RETURN 1
+ELSE 0</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi67" label="Flag0old" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(eq(${bi29,raw},.),eq(${bi30,raw},.),ne(${bi28,raw},.),ne(${bi37,raw},.)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (ActualRaw=.) AND (PredictSO99=.) AND (PREDICT &lt;&gt; .) AND (ACTUALCLEAN &lt;&gt; .)
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi68" label="FlagErr" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(gt(div(abs(minus(${bi28,raw},${bi29,raw})),abs(minus(${bi30,raw},${bi29,raw}))),10),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF Abs(Predict-ActualRaw)/Abs(PredictSO99-ActualRaw) &gt; 10
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi69" label="ErrRatio" format="COMMA12.2">
+					<Expression>div(aggregate(sum,group,abs(minus(${bi28,raw},${bi29,raw}))),aggregate(sum,group,abs(minus(${bi30,raw},${bi29,raw}))))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Sum(ByGroup,Abs(Predict-ActualRaw))
+/
+Sum(ByGroup,Abs(PredictSO99-ActualRaw))</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi70" label="ErrRatio2" format="COMMA12.2">
+					<Expression>div(abs(minus(aggregate(sum,group,${bi28,raw}),aggregate(sum,group,${bi29,raw}))),abs(minus(aggregate(sum,group,${bi30,raw}),aggregate(sum,group,${bi29,raw}))))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Abs(Sum(ByGroup,Predict)-Sum(ByGroup,ActualRaw))
+/
+Abs(Sum(ByGroup,PredictSO99)-Sum(ByGroup,ActualRaw))</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi71" label="Relative_Impact*100" format="COMMA12.4">
+					<Expression>times(div(minus(aggregate(sum,group,abs(minus(${bi30,raw},${bi29,raw}))),aggregate(sum,group,abs(minus(${bi28,raw},${bi29,raw})))),aggregate(sum,group,${bi29,raw})),100)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">(
+    (
+        Sum(ByGroup,Abs(PredictSO99-ActualRaw))
+        -
+        Sum(ByGroup,Abs(PREDICT-ActualRaw))
+        )
+    /
+    (
+        Sum(ByGroup,ActualRaw)
+        ) 
+)
+*100</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi72" label="Impact_SO99*100" format="COMMA12.4">
+					<Expression>times(minus(div(aggregate(sum,all,abs(minus(${bi30,raw},${bi29,raw}))),aggregate(sum,all,${bi29,raw})),div(plus(minus(aggregate(sum,all,abs(minus(${bi30,raw},${bi29,raw}))),aggregate(sum,group,abs(minus(${bi30,raw},${bi29,raw})))),aggregate(sum,group,abs(minus(${bi28,raw},${bi29,raw})))),aggregate(sum,all,${bi29,raw}))),100)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">(Sum(ForAll, Abs(PredictSO99 - ActualRaw)) / Sum(ForAll, ActualRaw) 
+-
+(Sum(ForAll, Abs(PredictSO99 - ActualRaw)) - Sum(ByGroup, Abs(PredictSO99 - ActualRaw)) + Sum(ByGroup, Abs(PREDICT - ActualRaw))) /
+Sum(ForAll, ActualRaw)) * 100</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<DataItem name="bi73" xref="ABCxyz"/>
+				<GroupedItem grouping="gr40" dataType="string" label="Candidate" name="bi74">
+					<GroupingParameters>
+						<GroupingParameter parameter="bi41" variable="var921"/>
+					</GroupingParameters>
+				</GroupedItem>
+				<CalculatedItem dataType="double" name="bi38" label="FlagTrain1" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(in(${bi29,raw},.,0),notIn(${bi37,raw},.,0),in(${bi30,raw},.,0),notIn(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (In(ActualRaw ,.,0)) AND (NotIn(ACTUALCLEAN,.,0)) AND (In(PredictSO99,.,0)) AND (NotIn(PREDICT,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi75" label="FlagPLMstop1a" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(in(${bi29,raw},.,0),in(${bi37,raw},.,0),in(${bi30,raw},.,0),notIn(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (In(ActualRaw,.,0)) AND (In(ACTUALCLEAN,.,0)) AND (In(PredictSO99,.,0)) AND (NotIn(PREDICT,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi76" label="FlagTrain4" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(eq(${bi38,raw},0),eq(${bi39,raw},0),gt(div(${bi29,raw},${bi37,raw}),2),gt(div(${bi30,raw},${bi28,raw}),2)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF FlagTrain1 = 0 AND FlagTrain2 = 0 AND ActualRaw / ACTUALCLEAN &gt; 2 AND PredictSO99 / PREDICT &gt; 2
+    RETURN 1
+ELSE 0</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi77" label="FlagPLMstart1a" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(notIn(${bi29,raw},.,0),notIn(${bi37,raw},.,0),notIn(${bi30,raw},.,0),in(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (NotIn(ActualRaw,., 0)) AND (NotIn(ACTUALCLEAN,.,0)) AND (NotIn(PredictSO99,.,0)) AND (In(Predict,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi78" label="Delta FA" format="PERCENT12.2">
+					<Expression>div(minus(${bi42,raw},${bi43,raw}),${bi43,raw})</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">(FA - &apos;FA SO99&apos;n) / &apos;FA SO99&apos;n</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<CalculatedItem dataType="double" name="bi79" label="FlagAllNull" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(in(${bi29,raw},.,0),in(${bi37,raw},.,0),in(${bi30,raw},.,0),in(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (In(ActualRaw ,.,0)) AND (In(ACTUALCLEAN,.,0)) AND (In(PredictSO99,.,0)) AND (In(PREDICT,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi80" label="FlagMissing1a" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(notMissing(${bi29,raw}),notMissing(${bi37,raw}),notMissing(${bi30,raw}),ismissing(${bi28,raw})),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (NotMissing(ActualRaw)) AND (NotMissing(ACTUALCLEAN)) AND (NotMissing(PredictSO99)) AND (Missing(PREDICT))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi81" label="FlagPLMstop" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(in(${bi29,raw},.,0),in(${bi37,raw},.,0),notIn(${bi30,raw},.,0),notIn(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (In(ActualRaw,.,0)) AND (In(ACTUALCLEAN,.,0)) AND (NotIn(PredictSO99,.,0)) AND (NotIn(Predict,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi82" label="FlagPLMstop1b" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(in(${bi29,raw},.,0),in(${bi37,raw},.,0),notIn(${bi30,raw},.,0),in(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (In(ActualRaw,.,0)) AND (In(ACTUALCLEAN,.,0)) AND (NotIn(PredictSO99,.,0)) AND (In(PREDICT,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi83" label="FlagPLMstart" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(notIn(${bi29,raw},.,0),notIn(${bi37,raw},.,0),in(${bi30,raw},.,0),in(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (NotIn(ActualRaw,.,0)) AND (NotIn(ACTUALCLEAN,.,0)) AND (In(PredictSO99,.,0)) AND (In(Predict,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi84" label="FlagPLMstart1b" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(notIn(${bi29,raw},.,0),notIn(${bi37,raw},.,0),in(${bi30,raw},.,0),notIn(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (NotIn(ActualRaw,., 0)) AND (NotIn(ACTUALCLEAN,.,0)) AND (In(PredictSO99,.,0)) AND (NotIn(Predict,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi85" label="FlagMissing1b" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(notMissing(${bi29,raw}),notMissing(${bi37,raw}),ismissing(${bi30,raw}),notMissing(${bi28,raw})),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (NotMissing(ActualRaw)) AND (NotMissing(ACTUALCLEAN)) AND (Missing(PredictSO99)) AND (NotMissing(PREDICT))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi86" label="FlagAllNull (1)" usage="categorical" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(in(${bi29,raw},.,0),in(${bi37,raw},.,0),in(${bi30,raw},.,0),in(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (In(ActualRaw ,.,0)) AND (In(ACTUALCLEAN,.,0)) AND (In(PredictSO99,.,0)) AND (In(PREDICT,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi87" label="FlagMissing1a (1)" usage="categorical" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(notMissing(${bi29,raw}),notMissing(${bi37,raw}),notMissing(${bi30,raw}),ismissing(${bi28,raw})),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (NotMissing(ActualRaw)) AND (NotMissing(ACTUALCLEAN)) AND (NotMissing(PredictSO99)) AND (Missing(PREDICT))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi88" label="FlagMissing1b (1)" usage="categorical" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(notMissing(${bi29,raw}),notMissing(${bi37,raw}),ismissing(${bi30,raw}),notMissing(${bi28,raw})),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (NotMissing(ActualRaw)) AND (NotMissing(ACTUALCLEAN)) AND (Missing(PredictSO99)) AND (NotMissing(PREDICT))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi89" label="FlagPLMstart (1)" usage="categorical" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(notIn(${bi29,raw},.,0),notIn(${bi37,raw},.,0),in(${bi30,raw},.,0),in(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (NotIn(ActualRaw,.,0)) AND (NotIn(ACTUALCLEAN,.,0)) AND (In(PredictSO99,.,0)) AND (In(Predict,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi90" label="FlagPLMstart1a (1)" usage="categorical" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(notIn(${bi29,raw},.,0),notIn(${bi37,raw},.,0),notIn(${bi30,raw},.,0),in(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (NotIn(ActualRaw,., 0)) AND (NotIn(ACTUALCLEAN,.,0)) AND (NotIn(PredictSO99,.,0)) AND (In(Predict,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi91" label="FlagPLMstart1b (1)" usage="categorical" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(notIn(${bi29,raw},.,0),notIn(${bi37,raw},.,0),in(${bi30,raw},.,0),notIn(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (NotIn(ActualRaw,., 0)) AND (NotIn(ACTUALCLEAN,.,0)) AND (In(PredictSO99,.,0)) AND (NotIn(Predict,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi92" label="FlagPLMstop (1)" usage="categorical" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(in(${bi29,raw},.,0),in(${bi37,raw},.,0),notIn(${bi30,raw},.,0),notIn(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (In(ActualRaw,.,0)) AND (In(ACTUALCLEAN,.,0)) AND (NotIn(PredictSO99,.,0)) AND (NotIn(Predict,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi93" label="FlagPLMstop1a (1)" usage="categorical" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(in(${bi29,raw},.,0),in(${bi37,raw},.,0),in(${bi30,raw},.,0),notIn(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (In(ActualRaw,.,0)) AND (In(ACTUALCLEAN,.,0)) AND (In(PredictSO99,.,0)) AND (NotIn(PREDICT,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi94" label="FlagPLMstop1b (1)" usage="categorical" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(in(${bi29,raw},.,0),in(${bi37,raw},.,0),notIn(${bi30,raw},.,0),in(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (In(ActualRaw,.,0)) AND (In(ACTUALCLEAN,.,0)) AND (NotIn(PredictSO99,.,0)) AND (In(PREDICT,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi95" label="FlagTrain1 (1)" usage="categorical" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(in(${bi29,raw},.,0),notIn(${bi37,raw},.,0),in(${bi30,raw},.,0),notIn(${bi28,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (In(ActualRaw ,.,0)) AND (NotIn(ACTUALCLEAN,.,0)) AND (In(PredictSO99,.,0)) AND (NotIn(PREDICT,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi96" label="FlagTrain2 (1)" usage="categorical" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(notIn(${bi29,raw},.,0),notIn(${bi30,raw},.,0),in(${bi28,raw},.,0),in(${bi37,raw},.,0)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF (NotIn(ActualRaw ,.,0)) AND (NotIn(PredictSO99 ,.,0)) AND (In(PREDICT ,.,0)) AND (In(ActualClean ,.,0))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi97" label="FlagTrain3" usage="categorical" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(eq(${bi38,raw},0),eq(${bi39,raw},0),gt(div(${bi37,raw},${bi29,raw}),2),gt(div(${bi28,raw},${bi30,raw}),2)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF FlagTrain1 = 0 AND FlagTrain2 = 0 AND ACTUALCLEAN / ActualRaw &gt; 2 AND PREDICT / PredictSO99 &gt; 2
+    RETURN 1
+ELSE 0</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi98" label="FlagTrain4 (1)" usage="categorical" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(eq(${bi38,raw},0),eq(${bi39,raw},0),gt(div(${bi29,raw},${bi37,raw}),2),gt(div(${bi30,raw},${bi28,raw}),2)),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF FlagTrain1 = 0 AND FlagTrain2 = 0 AND ActualRaw / ACTUALCLEAN &gt; 2 AND PredictSO99 / PREDICT &gt; 2
+    RETURN 1
+ELSE 0</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi99" label="FlagTStest" usage="quantitative" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(ismissing(aggregate(sum,group,${bi37,raw})),ismissing(aggregate(sum,group,${bi29,raw})),ismissing(aggregate(sum,group,${bi30,raw})),ismissing(aggregate(sum,group,${bi28,raw}))),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF Missing(Sum(ByGroup, ACTUALCLEAN)) AND Missing(Sum(ByGroup, ActualRaw)) AND Missing(Sum(ByGroup, PredictSO99)) AND Missing(Sum(ByGroup, Predict))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi100" label="FlagTStest (1)" usage="categorical" format="COMMA12." aggregation="sum">
+					<Expression>cond(and(ismissing(aggregate(sum,group,${bi37,raw})),ismissing(aggregate(sum,group,${bi29,raw})),ismissing(aggregate(sum,group,${bi30,raw})),ismissing(aggregate(sum,group,${bi28,raw}))),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF Missing(Sum(ByGroup, ACTUALCLEAN)) AND Missing(Sum(ByGroup, ActualRaw)) AND Missing(Sum(ByGroup, PredictSO99)) AND Missing(Sum(ByGroup, Predict))
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<CalculatedItem dataType="double" name="bi101" label="FlagErr (1)" usage="categorical" format="COMMA12." aggregation="sum">
+					<Expression>cond(gt(div(abs(minus(${bi28,raw},${bi29,raw})),abs(minus(${bi30,raw},${bi29,raw}))),10),1,0)</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">IF Abs(Predict-ActualRaw)/Abs(PredictSO99-ActualRaw) &gt; 10
+    RETURN (1)
+ELSE (0)</Property>
+					</EditorProperties>
+				</CalculatedItem>
+				<AggregateCalculatedItem dataType="double" name="bi102" label="Delta Bias" format="PERCENT12.2">
+					<Expression>div(abs(minus(abs(${bi44,raw}),abs(${bi45,raw}))),abs(${bi45,raw}))</Expression>
+					<EditorProperties>
+						<Property key="USER_EDIT_REPRESENTATION">Abs(Abs(Bias) - Abs(&apos;Bias SO99&apos;n)) / Abs(&apos;Bias SO99&apos;n)</Property>
+					</EditorProperties>
+				</AggregateCalculatedItem>
+				<DataItem name="bi225" xref="FLAGMISSINGNULL"/>
+				<DataItem name="bi226" xref="FLAGSUSPECTERROR"/>
+				<DataItem name="bi227" xref="FLAGTRAIN"/>
+			</BusinessItemFolder>
+		</DataSource>
+	</DataSources>
+	<VisualElements>
+		<VisualContainer containerType="precision" name="ve144" label="Page Precision container" selectionDisabled="true">
+			<EditorProperties>
+				<Property key="isPrecision">true</Property>
+				<Property key="isAutoLabel">false</Property>
+			</EditorProperties>
+		</VisualContainer>
+		<VisualContainer containerType="precision" name="ve112" label="Head Precision container" selectionDisabled="true">
+			<EditorProperties>
+				<Property key="isPrecision">true</Property>
+				<Property key="isAutoLabel">false</Property>
+			</EditorProperties>
+		</VisualContainer>
+		<Image scaleType="scale" file="ve103.png" name="ve103" label="Head Logo Left" description="Logo left" selectionDisabled="true"/>
+		<Text name="ve110" label="Head Text" selectionDisabled="true" applyDynamicBrushes="no">
+			<EditorProperties>
+				<Property key="isAutoLabel">false</Property>
+			</EditorProperties>
+			<P format="h1" class="paragraph1"><Span class="span1">Poc Replay</Span></P>
+		</Text>
+		<VisualContainer containerType="precision" name="ve123" label="Core Precision container" selectionDisabled="true">
+			<EditorProperties>
+				<Property key="isPrecision">true</Property>
+				<Property key="isAutoLabel">false</Property>
+			</EditorProperties>
+		</VisualContainer>
+		<VisualContainer containerType="precision" name="ve121" label="Core inside Precision container" selectionDisabled="true">
+			<EditorProperties>
+				<Property key="isPrecision">true</Property>
+				<Property key="isAutoLabel">false</Property>
+			</EditorProperties>
+		</VisualContainer>
+		<Image scaleType="scale" file="ve114.jpg" name="ve114" label="Core Image background" selectionDisabled="true"/>
+		<Text name="ve119" label="Text 3" selectionDisabled="true" applyDynamicBrushes="no">
+			<P><Span>Liste des pages avec un explication du propos et liens</Span></P>
+			<P></P>
+			<P><Span>Ajouter une page about</Span></P>
+			<P></P>
+			<P><Span>Ajouter un lien vers offre </Span></P>
+			<P></P>
+			<P></P>
+			<P><Span>Lien vers documentation</Span></P>
+			<P></P>
+			<P><Span action="ac157" class="span1">Overall</Span><Span class="span2"> </Span></P>
+			<P></P>
+			<P><Span action="ac159" class="span3">Comparison Current vs Backtest </Span></P>
+			<P></P>
+			<P><Span action="ac205" class="span4">Impacts</Span><Span> </Span><Span class="span5"> </Span></P>
+		</Text>
+		<VisualContainer containerType="precision" name="ve142" label="Footnote Precision container" selectionDisabled="true">
+			<EditorProperties>
+				<Property key="isPrecision">true</Property>
+				<Property key="isAutoLabel">false</Property>
+			</EditorProperties>
+		</VisualContainer>
+		<Text resultDefinitions="dd125" name="ve129" data="dd127" label="Footnote Text Left" selectionDisabled="true" applyDynamicBrushes="no">
+			<EditorProperties>
+				<Property key="isAutoLabel">false</Property>
+				<Property key="autoFrequencyQueryDataItemName">bi126</Property>
+			</EditorProperties>
+			<P class="paragraph1"><Span class="span1">Ecolab</Span><Span> - </Span><DynamicSpan metadataSource="tableDateModified"></DynamicSpan></P>
+		</Text>
+		<Text name="ve134" label="Footnote Text Center" selectionDisabled="true" applyDynamicBrushes="no">
+			<EditorProperties>
+				<Property key="isAutoLabel">false</Property>
+			</EditorProperties>
+			<P class="paragraph1"><Span>Foot note text</Span></P>
+		</Text>
+		<Text resultDefinitions="dd136" name="ve140" data="dd138" label="Footnote Right" selectionDisabled="true" applyDynamicBrushes="no">
+			<EditorProperties>
+				<Property key="isAutoLabel">false</Property>
+				<Property key="autoFrequencyQueryDataItemName">bi137</Property>
+			</EditorProperties>
+			<P class="paragraph1"><Span class="span1">Backtest </Span><Span>- </Span><DynamicSpan metadataSource="tableDateModified"></DynamicSpan><Span> </Span></P>
+		</Text>
+		<Text name="ve170" label="Text cases" selectionDisabled="true" applyDynamicBrushes="no">
+			<EditorProperties>
+				<Property key="isAutoLabel">false</Property>
+			</EditorProperties>
+			<Title auto="false"></Title>
+			<P><Span class="span1">Purpose and Objective</Span></P>
+			<P><Span> </Span></P>
+			<P></P>
+			<P class="paragraph1"><Span class="span2">KPI</Span></P>
+			<P class="paragraph2"><Span>•Improve FA by +5%</Span></P>
+			<P class="paragraph3"><Span>•Keep bias between +/-3%</Span></P>
+			<P class="paragraph4"></P>
+			<P class="paragraph5"><Span class="span3">Perimeter</Span></P>
+			<P class="paragraph6"><Span>•6 consecutive forecast (Feb to Jul)</Span></P>
+			<P class="paragraph7"><Span>•3rd period of horizon (Apr to Sept)</Span></P>
+			<P></P>
+			<P></P>
+			<P></P>
+			<P></P>
+			<P></P>
+			<P></P>
+			<P></P>
+			<P></P>
+			<P></P>
+			<P></P>
+			<P></P>
+			<P></P>
+			<P></P>
+			<P></P>
+			<P><Span>▶️</Span><Span action="ac224">Metrics and Granularity</Span><Span> </Span></P>
+			<P><Span>▶️</Span><Span action="ac191">Flags Definitions</Span><Span> </Span></P>
+			<P><Span>▶️ </Span><Span action="ac175">Cases</Span><Span> </Span></P>
+		</Text>
+		<Image scaleType="scale" file="ve188.png" name="ve188" label="Logo 1" selectionDisabled="true"/>
+		<Text name="ve220" label="Text 1" selectionDisabled="true" applyDynamicBrushes="no">
+			<P class="paragraph1"><Span class="span1">Metrics</Span></P>
+			<P class="paragraph2"><Span>•</Span><Span class="span2">Forecast:</Span><Span> based on ActualCleansed</Span></P>
+			<P class="paragraph3"><Span>•</Span><Span class="span3">FA:</Span><Span> 1-Abs(ActualRaw – Forecast)/ActualRaw</Span></P>
+			<P class="paragraph4"><Span>•</Span><Span class="span4">Bias:</Span><Span> (ActualRaw - Forecast)/ActualRaw</Span></P>
+			<P class="paragraph5"></P>
+			<P class="paragraph6"><Span class="span5">Granularity</Span></P>
+			<P class="paragraph7"><Span>•</Span><Span class="span6">Time granularity: </Span><Span>Month</Span></P>
+			<P class="paragraph8"><Span>•</Span><Span class="span7">Hierarchical granularity (modelling)</Span><Span>: level 4 at Ecolab (but can be tested at any level)</Span></P>
+			<P class="paragraph9"><Span>•</Span><Span class="span8">Hierarchical granularity (forecast)</Span><Span>: level 4 (at Ecolab) and level 3</Span></P>
+			<P class="paragraph10"><Span>•</Span><Span class="span9">Error granularity:</Span><Span> Level 3</Span></P>
+		</Text>
+		<VisualContainer containerType="layout" name="ve244" label="Layout Container 1" selectionDisabled="true">
+			<EditorProperties>
+				<Property key="visualType">LAYOUT_CONTAINER</Property>
+			</EditorProperties>
+		</VisualContainer>
+		<Image scaleType="scale" file="ve246.jpg" name="ve246" label="Image 1" selectionDisabled="true"/>
+	</VisualElements>
+	<View representativeVisual="vi115">
+		<Header>
+			<MediaContainer target="mt2">
+				<ResponsiveLayout orientation="horizontal" overflow="fit">
+					<Weights mediaTarget="mt5" unit="percent">
+						<Weight value="100%"/>
+					</Weights>
+					<Weights mediaTarget="mt4" unit="percent">
+						<Weight value="100%"/>
+					</Weights>
+					<Weights mediaTarget="mt3" unit="percent">
+						<Weight value="100%"/>
+					</Weights>
+				</ResponsiveLayout>
+			</MediaContainer>
+		</Header>
+		<Section name="vi146" label="Home Page">
+			<Header>
+				<MediaContainer target="mt2">
+					<ResponsiveLayout orientation="horizontal" overflow="fit">
+						<Weights mediaTarget="mt5" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt4" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt3" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+					</ResponsiveLayout>
+				</MediaContainer>
+			</Header>
+			<Body>
+				<MediaContainer target="mt2">
+					<ResponsiveLayout orientation="vertical" overflow="fit">
+						<Weights mediaTarget="mt5" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt4" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt3" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+					</ResponsiveLayout>
+					<Container ref="ve144" name="vi145">
+						<ResponsiveConstraint>
+							<WidthConstraint>
+								<Width mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="shrinkable"/>
+							</WidthConstraint>
+							<HeightConstraint>
+								<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="shrinkable"/>
+							</HeightConstraint>
+						</ResponsiveConstraint>
+						<ResponsiveLayout orientation="vertical" overflow="fit">
+							<Weights mediaTarget="mt5" unit="percent">
+								<Weight value="100%"/>
+							</Weights>
+							<Weights mediaTarget="mt4" unit="percent">
+								<Weight value="100%"/>
+							</Weights>
+							<Weights mediaTarget="mt3" unit="percent">
+								<Weight value="100%"/>
+							</Weights>
+						</ResponsiveLayout>
+						<Container ref="ve112" name="vi113">
+							<ResponsiveConstraint zIndex="1">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="100%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="17.78%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi145" offset="0%"/>
+								<HorizontalConstraint anchor="vi145" offset="0%"/>
+							</ResponsiveConstraint>
+							<ResponsiveLayout orientation="vertical" overflow="fit">
+								<Weights mediaTarget="mt5" unit="percent">
+									<Weight value="100%"/>
+								</Weights>
+								<Weights mediaTarget="mt4" unit="percent">
+									<Weight value="100%"/>
+								</Weights>
+								<Weights mediaTarget="mt3" unit="percent">
+									<Weight value="100%"/>
+								</Weights>
+							</ResponsiveLayout>
+							<Visual ref="ve103" name="vi104">
+								<ResponsiveConstraint zIndex="1">
+									<WidthConstraint>
+										<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="14%" flexibility="shrinkable"/>
+									</WidthConstraint>
+									<HeightConstraint>
+										<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="shrinkable"/>
+									</HeightConstraint>
+									<VerticalConstraint anchor="vi113" offset="10%"/>
+									<HorizontalConstraint anchor="vi113" offset="2%"/>
+								</ResponsiveConstraint>
+							</Visual>
+							<Visual ref="ve110" name="vi111">
+								<ResponsiveConstraint zIndex="2">
+									<WidthConstraint>
+										<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="68.31%" flexibility="flexible"/>
+									</WidthConstraint>
+									<HeightConstraint>
+										<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="80%" flexibility="fixed"/>
+									</HeightConstraint>
+									<VerticalConstraint anchor="vi113" offset="10%"/>
+									<HorizontalConstraint anchor="vi113" offset="16.82%"/>
+								</ResponsiveConstraint>
+							</Visual>
+							<Visual ref="ve188" name="vi189">
+								<ResponsiveConstraint zIndex="3">
+									<WidthConstraint>
+										<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="6.25%" flexibility="shrinkable"/>
+									</WidthConstraint>
+									<HeightConstraint>
+										<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="60%" flexibility="shrinkable"/>
+									</HeightConstraint>
+									<VerticalConstraint anchor="vi113" offset="20%"/>
+									<HorizontalConstraint anchor="vi113" offset="92.5%"/>
+								</ResponsiveConstraint>
+							</Visual>
+						</Container>
+						<Container ref="ve123" name="vi124">
+							<ResponsiveConstraint zIndex="2">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="100%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="75%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi145" offset="15%"/>
+								<HorizontalConstraint anchor="vi145" offset="0%"/>
+							</ResponsiveConstraint>
+							<ResponsiveLayout orientation="vertical" overflow="fit">
+								<Weights mediaTarget="mt5" unit="percent">
+									<Weight value="100%"/>
+								</Weights>
+								<Weights mediaTarget="mt4" unit="percent">
+									<Weight value="100%"/>
+								</Weights>
+								<Weights mediaTarget="mt3" unit="percent">
+									<Weight value="100%"/>
+								</Weights>
+							</ResponsiveLayout>
+							<Container ref="ve121" name="vi122">
+								<ResponsiveConstraint zIndex="1">
+									<WidthConstraint>
+										<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="96.31%" flexibility="shrinkable"/>
+									</WidthConstraint>
+									<HeightConstraint>
+										<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="100%" flexibility="shrinkable"/>
+									</HeightConstraint>
+									<VerticalConstraint anchor="vi124" offset="0%"/>
+									<HorizontalConstraint anchor="vi124" offset="0%"/>
+								</ResponsiveConstraint>
+								<ResponsiveLayout orientation="vertical" overflow="fit">
+									<Weights mediaTarget="mt5" unit="percent">
+										<Weight value="100%"/>
+									</Weights>
+									<Weights mediaTarget="mt4" unit="percent">
+										<Weight value="100%"/>
+									</Weights>
+									<Weights mediaTarget="mt3" unit="percent">
+										<Weight value="100%"/>
+									</Weights>
+								</ResponsiveLayout>
+								<Visual ref="ve114" name="vi115">
+									<ResponsiveConstraint zIndex="1">
+										<WidthConstraint>
+											<Width mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="shrinkable"/>
+										</WidthConstraint>
+										<HeightConstraint>
+											<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="98.97%" flexibility="shrinkable"/>
+										</HeightConstraint>
+										<VerticalConstraint anchor="vi122" offset="0%"/>
+										<HorizontalConstraint anchor="vi122" offset="10.22%"/>
+									</ResponsiveConstraint>
+								</Visual>
+								<Visual ref="ve119" name="vi120">
+									<ResponsiveConstraint zIndex="2">
+										<WidthConstraint>
+											<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="30%" flexibility="flexible"/>
+										</WidthConstraint>
+										<HeightConstraint>
+											<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="98.69%" flexibility="fixed"/>
+										</HeightConstraint>
+										<VerticalConstraint anchor="vi122" offset="0%"/>
+										<HorizontalConstraint anchor="vi122" offset="0%"/>
+									</ResponsiveConstraint>
+								</Visual>
+								<Visual ref="ve170" name="vi169">
+									<ResponsiveConstraint zIndex="3">
+										<WidthConstraint>
+											<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="15.77%" flexibility="flexible"/>
+										</WidthConstraint>
+										<HeightConstraint>
+											<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="91.6%" flexibility="fixed"/>
+										</HeightConstraint>
+										<VerticalConstraint anchor="vi122" offset="3.75%"/>
+										<HorizontalConstraint anchor="vi122" offset="84.24%"/>
+									</ResponsiveConstraint>
+								</Visual>
+							</Container>
+						</Container>
+						<Container ref="ve142" name="vi143">
+							<ResponsiveConstraint zIndex="3">
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" value="100%" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" value="10%" flexibility="shrinkable"/>
+								</HeightConstraint>
+								<VerticalConstraint anchor="vi145" offset="90%"/>
+								<HorizontalConstraint anchor="vi145" offset="0%"/>
+							</ResponsiveConstraint>
+							<ResponsiveLayout orientation="vertical" overflow="fit">
+								<Weights mediaTarget="mt5" unit="percent">
+									<Weight value="100%"/>
+								</Weights>
+								<Weights mediaTarget="mt4" unit="percent">
+									<Weight value="100%"/>
+								</Weights>
+								<Weights mediaTarget="mt3" unit="percent">
+									<Weight value="100%"/>
+								</Weights>
+							</ResponsiveLayout>
+							<Visual ref="ve129" name="vi130">
+								<ResponsiveConstraint zIndex="1">
+									<WidthConstraint>
+										<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="20%" flexibility="flexible"/>
+									</WidthConstraint>
+									<HeightConstraint>
+										<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="fixed"/>
+									</HeightConstraint>
+									<VerticalConstraint anchor="vi143" offset="20%"/>
+									<HorizontalConstraint anchor="vi143" offset="1.32%"/>
+								</ResponsiveConstraint>
+							</Visual>
+							<Visual ref="ve134" name="vi135">
+								<ResponsiveConstraint zIndex="3">
+									<WidthConstraint>
+										<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="58.64%" flexibility="flexible"/>
+									</WidthConstraint>
+									<HeightConstraint>
+										<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="fixed"/>
+									</HeightConstraint>
+									<VerticalConstraint anchor="vi143" offset="20%"/>
+									<HorizontalConstraint anchor="vi143" offset="22.35%"/>
+								</ResponsiveConstraint>
+							</Visual>
+							<Visual ref="ve140" name="vi141">
+								<ResponsiveConstraint zIndex="2">
+									<WidthConstraint>
+										<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="20%" flexibility="flexible"/>
+									</WidthConstraint>
+									<HeightConstraint>
+										<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="fixed"/>
+									</HeightConstraint>
+									<VerticalConstraint anchor="vi143" offset="21.21%"/>
+									<HorizontalConstraint anchor="vi143" offset="78.41%"/>
+								</ResponsiveConstraint>
+							</Visual>
+						</Container>
+					</Container>
+				</MediaContainer>
+			</Body>
+		</Section>
+		<HiddenSection width="60%" height="60%" purpose="information" name="vi218" label="Metrics and Granularity">
+			<Header>
+				<MediaContainer target="mt2">
+					<ResponsiveLayout orientation="horizontal" overflow="fit">
+						<Weights mediaTarget="mt5" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt4" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt3" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+					</ResponsiveLayout>
+				</MediaContainer>
+			</Header>
+			<Body>
+				<MediaContainer target="mt2">
+					<ResponsiveLayout orientation="vertical" overflow="fit">
+						<Weights mediaTarget="mt5" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt4" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+						<Weights mediaTarget="mt3" unit="percent">
+							<Weight value="100%"/>
+						</Weights>
+					</ResponsiveLayout>
+					<Container ref="ve244" name="vi243">
+						<ResponsiveConstraint>
+							<WidthConstraint>
+								<Width mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="flexible"/>
+							</WidthConstraint>
+							<HeightConstraint>
+								<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="flexible"/>
+							</HeightConstraint>
+						</ResponsiveConstraint>
+						<ResponsiveLayout orientation="vertical" overflow="grow"/>
+						<Visual ref="ve220" name="vi219">
+							<ResponsiveConstraint>
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="ignore" value="47.5%" flexibility="flexible"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="fixed"/>
+								</HeightConstraint>
+							</ResponsiveConstraint>
+						</Visual>
+						<Visual ref="ve246" name="vi245">
+							<ResponsiveConstraint>
+								<WidthConstraint>
+									<Width mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="shrinkable"/>
+								</WidthConstraint>
+								<HeightConstraint>
+									<Height mediaTarget="mt3" preferredSizeBehavior="honor" flexibility="shrinkable"/>
+								</HeightConstraint>
+							</ResponsiveConstraint>
+						</Visual>
+					</Container>
+				</MediaContainer>
+			</Body>
+		</HiddenSection>
+	</View>
+	<Actions>
+		<NavigationAction type="report" value="/reports/reports/07fb4d5e-ae80-432f-8e20-9196af581dde" behavior="filter" label=" Overall results" name="ac157">
+			<NavigationAction type="section" value="vi488" label="Overall" name="ac156"/>
+		</NavigationAction>
+		<NavigationAction type="report" value="/reports/reports/d6514057-dadf-42be-bf21-51576f0c2a93" behavior="filter" label="Current Situation and Backtest comparison" name="ac159">
+			<NavigationAction type="section" value="vi488" label="Overall" name="ac158"/>
+		</NavigationAction>
+		<NavigationAction type="report" value="/reports/reports/fd04be50-eaf6-4b4f-ab0c-cac3c2cf637b" behavior="filter" label="About" name="ac175">
+			<NavigationAction type="section" value="vi920" label="Cases" name="ac174"/>
+		</NavigationAction>
+		<NavigationAction type="report" value="/reports/reports/fd04be50-eaf6-4b4f-ab0c-cac3c2cf637b" behavior="filter" label="About" name="ac191">
+			<NavigationAction type="section" value="vi348" label="Flags" name="ac190"/>
+		</NavigationAction>
+		<NavigationAction type="report" value="/reports/reports/f6f5adef-4ee6-4cd2-8e8b-e077761479b6" behavior="filter" label="Impacts" name="ac205">
+			<NavigationAction type="section" value="vi418" label="DClass impact" name="ac204"/>
+		</NavigationAction>
+		<NavigationAction type="section" value="vi218" behavior="filter" label="Metrics and Granularity" name="ac224"/>
+	</Actions>
+	<MediaSchemes>
+		<MediaScheme name="ms1">
+			<BaseStylesheetResource file="basems1.css" theme="light2025"/>
+			<StylesheetFile file="ms1.css"/>
+		</MediaScheme>
+	</MediaSchemes>
+	<MediaTargets>
+		<MediaTarget windowSize="default" scheme="ms1" name="mt2"/>
+		<MediaTarget windowSize="small" scheme="ms1" name="mt3"/>
+		<MediaTarget windowSize="medium" scheme="ms1" name="mt4"/>
+		<MediaTarget windowSize="large" scheme="ms1" name="mt5"/>
+	</MediaTargets>
+	<Properties>
+		<Property key="displayDataSource">ds8</Property>
+		<Property key="ReportPackagesServiceVersion">Viya4 2025.12</Property>
+		<Property key="ReportDataServiceVersion">Viya4 2025.12</Property>
+	</Properties>
+	<Groupings>
+		<Grouping outputType="string" name="gr40">
+			<GroupingVariables>
+				<GroupingVariable variable="var921" type="string"/>
+			</GroupingVariables>
+			<Group>
+				<ValueExpression>&apos;DC default L4&apos;</ValueExpression>
+				<TestExpression>in(${var921,binned},&apos;EcoNew_DCDefault_MergeSegments&apos;)</TestExpression>
+			</Group>
+			<Group>
+				<ValueExpression>&apos;DC JEN&apos;</ValueExpression>
+				<TestExpression>in(${var921,binned},&apos;EcoNewJEN_DemandClass1_MergeSegments&apos;)</TestExpression>
+			</Group>
+			<Group>
+				<ValueExpression>&apos;DC naive L4&apos;</ValueExpression>
+				<TestExpression>in(${var921,binned},&apos;EcoNew_DCbench_MergeSegments&apos;)</TestExpression>
+			</Group>
+			<Group>
+				<ValueExpression>&apos;RNN&apos;</ValueExpression>
+				<TestExpression>in(${var921,binned},&apos;EcoNewMK_RNN_RNNForecasting&apos;)</TestExpression>
+			</Group>
+			<Group>
+				<ValueExpression>&apos;DC Naive L3&apos;</ValueExpression>
+				<TestExpression>in(${var921,binned},&apos;EcoNewL3_DCbench_MergeSegments&apos;)</TestExpression>
+			</Group>
+			<Group>
+				<ValueExpression>&apos;DC default L3&apos;</ValueExpression>
+				<TestExpression>in(${var921,binned},&apos;EcoNewL3_DCDefault_MergeSegments&apos;)</TestExpression>
+			</Group>
+			<Other>
+				<ValueExpression>&apos;Other&apos;</ValueExpression>
+			</Other>
+		</Grouping>
+	</Groupings>
+	<DataSourceMappings>
+		<InternalDataSourceMapping source="ds8" target="ds7" name="dm9">
+			<InternalColumnMapping source="bi33" target="bi14"/>
+			<InternalColumnMapping source="bi31" target="bi12"/>
+			<InternalColumnMapping source="bi32" target="bi13"/>
+		</InternalDataSourceMapping>
+	</DataSourceMappings>
+	<ExportProperties>
+		<Export destination="pdf">
+			<Property key="showCoverPage" value="true"></Property>
+			<Property key="showPageNumbers" value="true"></Property>
+		</Export>
+	</ExportProperties>
+	<History>
+	<Versions>
+		<Version key="4.59.0" lastDate="2026-02-13T00:00:00Z"/>
+	</Versions>
+	<Editors>
+		<Editor applicationName="VA">
+			<Revision editorVersion="2025.12" lastDate="2026-02-26T11:26:46.090Z"/>
+		</Editor>
+	</Editors>
+</History>
+	<SASReportState date="2026-02-24T10:10:50Z">
+		<View/>
+	</SASReportState>
+</SASReport>
